@@ -90,6 +90,11 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=34;%PROJECTDIR%/Nav_Simulation.bmp"
       - Name: Panel3
         Type: NavigationPanelItem
         Children:
