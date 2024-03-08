@@ -1,0 +1,54 @@
+Name: DateTime
+Type: FolderType
+Children:
+- Name: DateTimeFormatted
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: DateOperator
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "/"
+- Name: TimeOperator
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ":"
+- Name: DateFormat
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "DDMMYYYY"
+- Name: DateFormatted
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: TimeFormatted
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: CurrDateTime
+  Type: BaseObjectType
+  Children:
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Month
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Day
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Hour
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Minute
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Second
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

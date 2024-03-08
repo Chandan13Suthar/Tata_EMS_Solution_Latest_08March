@@ -1,0 +1,17 @@
+Name: Recipes
+Type: FolderType
+Children:
+- Name: Component1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Component2
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Component3
+  Type: BaseDataVariableType
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: [0,0,0]

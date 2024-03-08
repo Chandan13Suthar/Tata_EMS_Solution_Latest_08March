@@ -1,0 +1,22 @@
+Name: Stamping
+Type: FolderType
+Children:
+- File: Incomer_1/Incomer_1.yaml
+- File: Incomer_2/Incomer_2.yaml
+- File: STP_MVS_01_OG_F4/STP_MVS_01_OG_F4.yaml
+- File: STP_MVS_01_OG_F5/STP_MVS_01_OG_F5.yaml
+- File: STP_MVS_01_OG_F6/STP_MVS_01_OG_F6.yaml
+- File: STP_MVS_01_OG_F7/STP_MVS_01_OG_F7.yaml
+- File: STP_MVS_01_OG_F8/STP_MVS_01_OG_F8.yaml
+- File: STP_SWB_01_INF1/STP_SWB_01_INF1.yaml
+- File: STP_SWB_01_OG_3F/STP_SWB_01_OG_3F.yaml
+- File: STP_SWB_02_INF1/STP_SWB_02_INF1.yaml
+- File: STP_SWB_02_OG_2F/STP_SWB_02_OG_2F.yaml
+- File: STP_SWB_02_OG_3F1/STP_SWB_02_OG_3F1.yaml
+- File: STP_SWB_02_OG_3F2/STP_SWB_02_OG_3F2.yaml
+- File: STP_SWB_02_OG_4F1/STP_SWB_02_OG_4F1.yaml
+- File: STP_SWB_02_OG_4F2/STP_SWB_02_OG_4F2.yaml
+- File: STP_SWB_02_OG_5F1/STP_SWB_02_OG_5F1.yaml
+- File: STP_SWB_03_INF1/STP_SWB_03_INF1.yaml
+- File: STP_SWB_04_INF1/STP_SWB_04_INF1.yaml
+- File: STP_SWB_05_INF1/STP_SWB_05_INF1.yaml

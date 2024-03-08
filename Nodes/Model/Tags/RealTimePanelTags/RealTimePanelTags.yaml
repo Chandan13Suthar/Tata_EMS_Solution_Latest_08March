@@ -1,0 +1,6 @@
+Name: RealTimePanelTags
+Type: FolderType
+Children:
+- File: AllthreePanels/AllthreePanels.yaml
+- File: UtilityMeters/UtilityMeters.yaml
+- File: 33KVMeters/33KVMeters.yaml

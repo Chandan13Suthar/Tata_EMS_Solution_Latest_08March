@@ -1,0 +1,25 @@
+Name: TCF Station
+Type: FolderType
+Children:
+- File: Incomer_1/Incomer_1.yaml
+- File: Incomer_2/Incomer_2.yaml
+- File: TCF_MVS_01_OG_F4/TCF_MVS_01_OG_F4.yaml
+- File: TCF_MVS_01_OG_F5/TCF_MVS_01_OG_F5.yaml
+- File: TCF_MVS_01_OG_F6/TCF_MVS_01_OG_F6.yaml
+- File: WH_TCF_SWB_01_IN1F2/WH_TCF_SWB_01_IN1F2.yaml
+- File: WH_TCF_SWB_01_OG_2F3/WH_TCF_SWB_01_OG_2F3.yaml
+- File: WH_TCF_SWB_01_OG_3F3/WH_TCF_SWB_01_OG_3F3.yaml
+- File: WH_TCF_SWB_01_OG_4F3/WH_TCF_SWB_01_OG_4F3.yaml
+- File: WH_TCF_SWB_01_OG_5F3/WH_TCF_SWB_01_OG_5F3.yaml
+- File: 'TCF-SWB-01_IN1F3/TCF-SWB-01_IN1F3.yaml'
+- File: 'TCF-SWB-01_OG_2F3/TCF-SWB-01_OG_2F3.yaml'
+- File: 'TCF-SWB-01_OG_3F3/TCF-SWB-01_OG_3F3.yaml'
+- File: 'TCF-SWB-01_OG_4F3/TCF-SWB-01_OG_4F3.yaml'
+- File: 'TCF-SWB-01_OG_5F3/TCF-SWB-01_OG_5F3.yaml'
+- File: 'TCF-SWB-01_OG_6F3/TCF-SWB-01_OG_6F3.yaml'
+- File: 'TCF-SWB-01_OG_7F3/TCF-SWB-01_OG_7F3.yaml'
+- File: 'TCF-SWB-02_INF1/TCF-SWB-02_INF1.yaml'
+- File: 'TCF-SWB-02_OG_2F3/TCF-SWB-02_OG_2F3.yaml'
+- File: 'TCF-SWB-02_OG_3F3/TCF-SWB-02_OG_3F3.yaml'
+- File: 'TCF-SWB-02_OG_4F3/TCF-SWB-02_OG_4F3.yaml'
+- File: 'TCF-SWB-02_OG_6F3/TCF-SWB-02_OG_6F3.yaml'

@@ -1,0 +1,23 @@
+Name: Incomer_2
+Type: FolderType
+Children:
+- Name: BreakerCapacity
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 1200.5999755859375
+- Name: PowerFactor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: BreakerCapacity%
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 25.600000381469727
+- Name: Consumption%
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

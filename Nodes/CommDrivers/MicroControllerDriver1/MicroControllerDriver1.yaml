@@ -1,0 +1,36 @@
+Name: MicroControllerDriver1
+Type: MicroControllerDriver
+Children:
+- Name: ControllerType
+  Type: BaseDataVariableType
+  DataType: ControllerType
+  Value: 0
+- Name: Protocol
+  Type: BaseDataVariableType
+  DataType: MicroControllerProtocol
+  Value: 0
+- Name: SerialProtocol
+  Type: BaseDataVariableType
+  DataType: SerialProtocol
+  Value: 0
+- Name: SerialPort
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "COM1"
+- Name: Baudrate
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 38400
+- Name: DataSize
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 8
+- Name: Parity
+  Type: BaseDataVariableType
+  DataType: Parity
+  Value: 0
+- Name: StopBits
+  Type: BaseDataVariableType
+  DataType: StopBits
+  Value: 0
+- File: MicroControllerStation1/MicroControllerStation1.yaml

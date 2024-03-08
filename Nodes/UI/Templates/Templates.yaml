@@ -1,0 +1,8 @@
+Name: Templates
+Type: FolderType
+Children:
+- File: Common/Common.yaml
+- File: Localization/Localization.yaml
+- File: Real_Time_Panels/Real_Time_Panels.yaml
+- File: LineArrow/LineArrow.yaml
+- File: SymbolNew/SymbolNew.yaml

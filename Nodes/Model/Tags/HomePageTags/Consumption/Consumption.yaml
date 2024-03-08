@@ -1,0 +1,39 @@
+Name: Consumption
+Type: FolderType
+Children:
+- Name: 33KVTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: UtilityTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 8956.0
+- Name: PumpRoomTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 8795.0
+- Name: PaintShopTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: BodyShopTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: TCFTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2589.0
+- Name: StampingTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2589.0
+- Name: AdminTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: SPPTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

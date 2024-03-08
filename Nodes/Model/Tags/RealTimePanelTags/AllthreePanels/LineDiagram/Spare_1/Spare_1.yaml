@@ -1,0 +1,23 @@
+Name: Spare_1
+Type: FolderType
+Children:
+- Name: BreakerCapacity
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: PowerFactor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: BreakerCapacity%
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Consumption%
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

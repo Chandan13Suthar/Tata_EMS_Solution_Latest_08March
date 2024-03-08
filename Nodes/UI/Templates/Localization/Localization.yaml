@@ -1,0 +1,4 @@
+Name: Localization
+Type: FolderType
+Children:
+- File: LoginForm1/LoginForm1.yaml

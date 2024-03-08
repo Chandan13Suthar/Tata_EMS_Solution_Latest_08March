@@ -1,0 +1,27 @@
+Name: Demo
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 2500
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: 'y[phasecurrent'
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 25.600000381469727
+- Name: bphasecurrent
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 26.299999237060547
+- Name: Average Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 25.200000762939453
+- Name: Pf
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.8999999761581421

@@ -1,0 +1,5 @@
+Name: BodyShop
+Type: FolderType
+Children:
+- File: Station_1/Station_1.yaml
+- File: Station_2/Station_2.yaml

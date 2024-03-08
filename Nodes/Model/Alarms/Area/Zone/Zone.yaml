@@ -1,0 +1,15 @@
+Name: Zone
+Type: FolderType
+Children:
+- Name: Zone1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Zone2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Zone3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

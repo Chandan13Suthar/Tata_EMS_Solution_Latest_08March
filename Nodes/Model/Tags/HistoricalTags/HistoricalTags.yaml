@@ -1,0 +1,6 @@
+Name: HistoricalTags
+Type: FolderType
+Children:
+- File: HistoDashboard/HistoDashboard.yaml
+- File: ComparisonDashboard/ComparisonDashboard.yaml
+- File: ConsumptionDistribution/ConsumptionDistribution.yaml

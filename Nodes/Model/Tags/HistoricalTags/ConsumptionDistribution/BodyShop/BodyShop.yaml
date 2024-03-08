@@ -1,0 +1,23 @@
+Name: BodyShop
+Type: FolderType
+Children:
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Target
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: YearLowest
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: MonthLowest
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Average
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

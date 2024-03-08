@@ -1,0 +1,16 @@
+Name: JACE_Selected_Panel
+Type: FolderType
+Children:
+- File: 33kv_Switchgear/33kv_Switchgear.yaml
+- File: SPP_Shop/SPP_Shop.yaml
+- File: Spare/Spare.yaml
+- File: Engine_Shop/Engine_Shop.yaml
+- File: EB_Incomer_1/EB_Incomer_1.yaml
+- File: DG_Incomer_2/DG_Incomer_2.yaml
+- File: Utility_Panels/Utility_Panels.yaml
+- File: Stamping/Stamping.yaml
+- File: PaintShop/PaintShop.yaml
+- File: Admin/Admin.yaml
+- File: Pump_Room/Pump_Room.yaml
+- File: TCF_Station/TCF_Station.yaml
+- File: BodyShop/BodyShop.yaml

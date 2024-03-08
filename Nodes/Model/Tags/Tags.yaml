@@ -1,0 +1,6 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: HomePageTags/HomePageTags.yaml
+- File: RealTimePanelTags/RealTimePanelTags.yaml
+- File: HistoricalTags/HistoricalTags.yaml

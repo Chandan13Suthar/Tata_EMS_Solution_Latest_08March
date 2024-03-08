@@ -1,0 +1,6 @@
+Name: AllthreePanels
+Type: FolderType
+Children:
+- File: LineDiagram/LineDiagram.yaml
+- File: JaseWise/JaseWise.yaml
+- File: All_Panels/All_Panels.yaml

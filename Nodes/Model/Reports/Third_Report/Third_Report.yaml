@@ -1,0 +1,84 @@
+Name: Third Report
+Type: FolderType
+Children:
+- Name: DistributionPath
+  Id: g=55dac66ae06da10d4eedea5ac87bcfce
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "D:\\Jatin Bhai\\DistributionReport.pdf"
+- Name: Date
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: Utility_Target
+  Id: g=373eb1ebefecacc5272ac347137795e7
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Utility_Name
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Utility"
+- Name: Target_Name
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Target"
+- Name: ButtonPressed
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Target_Value
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../ButtonPressed"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Float
+      ReferenceType: HasParameter
+      Value: 0.0
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "SELECT  Target  FROM \"ComparisionDashboard\" WHERE Date = {0:sql_literal} AND Jace =  {1:sql_literal}"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Date"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Utility_Name"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Float
+      ReferenceType: HasParameter
+      Value: 0.0

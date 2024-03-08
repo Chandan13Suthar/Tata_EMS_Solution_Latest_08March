@@ -1,0 +1,49 @@
+Name: Query
+Type: FolderType
+Children:
+- Name: DataLogger
+  Type: BaseObjectType
+  Children:
+  - Name: dataloggerVariable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: dataloggerVariable2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: dataloggerVariable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: DBColumns
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: ["Timestamp","dataloggerVariable1","dataloggerVariable2","dataloggerVariable3"]
+- Name: InsertValues
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: 2
+  ArrayDimensions: [1,4]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [1,4],
+    "Body": [
+     "\u0000","\u0000","\u0000","\u0000"
+    ]
+   }
+- Name: InsertVariable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: InsertVariable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: InsertVariable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

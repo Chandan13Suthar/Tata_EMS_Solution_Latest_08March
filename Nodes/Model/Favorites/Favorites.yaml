@@ -1,0 +1,31 @@
+Name: Favorites
+Type: FolderType
+Children:
+- Name: FavoriteTab
+  Id: g=a5968f81e70d1330b98bdc421399ca97
+  Supertype: BaseObjectType
+  Children:
+  - Name: Tile_Title
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Tile_Subtitle
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Tile_Icon
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: Tile_Open_Panel
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Tile_Favorite
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Tile_Description
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""

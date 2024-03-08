@@ -1,0 +1,15 @@
+Name: Testing Histo
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 20
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30

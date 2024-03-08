@@ -1,0 +1,27 @@
+Name: ComparisonDashboard
+Type: FolderType
+Children:
+- Name: S1_TotalConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_TotalConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S1_PowerFactor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_PowerFactor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S1_Frequency
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: S2_Frequency
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

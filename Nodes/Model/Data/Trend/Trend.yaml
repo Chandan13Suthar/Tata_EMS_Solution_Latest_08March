@@ -1,0 +1,27 @@
+Name: Trend
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DateTime
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2021-01-01T09:30:00.0000000"
+- Name: DateTimeQuery
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2021-01-01T09:30:00.0000000"
+- Name: TimeWindow
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:01:0.0000000"

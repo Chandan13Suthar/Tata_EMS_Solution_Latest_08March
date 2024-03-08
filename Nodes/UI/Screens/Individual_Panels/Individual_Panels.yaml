@@ -1,0 +1,10 @@
+Name: Individual Panels
+Type: FolderType
+Children:
+- File: 33Kv_Switchgear/33Kv_Switchgear.yaml
+- File: Utility_Station/Utility_Station.yaml
+- File: Stamping/Stamping.yaml
+- File: PaintShop/PaintShop.yaml
+- File: BodyShop/BodyShop.yaml
+- File: TCF_Station/TCF_Station.yaml
+- File: Admin/Admin.yaml

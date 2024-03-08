@@ -1,0 +1,23 @@
+Name: LineDiagram
+Type: FolderType
+Children:
+- File: Incomer_1/Incomer_1.yaml
+- File: Incomer_2/Incomer_2.yaml
+- File: SPP_1/SPP_1.yaml
+- File: SPP_2/SPP_2.yaml
+- File: Spare_1/Spare_1.yaml
+- File: Spare_2/Spare_2.yaml
+- File: Utility1/Utility1.yaml
+- File: Utility2/Utility2.yaml
+- File: Stamping1/Stamping1.yaml
+- File: Stamping2/Stamping2.yaml
+- File: TCF1/TCF1.yaml
+- File: TCF2/TCF2.yaml
+- File: BodyShop1/BodyShop1.yaml
+- File: BodyShop2/BodyShop2.yaml
+- File: EngineShop_1/EngineShop_1.yaml
+- File: EngineShop_2/EngineShop_2.yaml
+- File: PaintShop_1/PaintShop_1.yaml
+- File: PaintShop_2/PaintShop_2.yaml
+- File: EB_Incomer_1/EB_Incomer_1.yaml
+- File: DG_Incomer_1/DG_Incomer_1.yaml

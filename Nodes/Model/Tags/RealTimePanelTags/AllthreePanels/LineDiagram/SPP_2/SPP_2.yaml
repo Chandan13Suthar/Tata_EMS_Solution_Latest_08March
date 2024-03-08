@@ -1,0 +1,23 @@
+Name: SPP_2
+Type: FolderType
+Children:
+- Name: BreakerCapacity
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2222.0
+- Name: PowerFactor
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: BreakerCapacity%
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 35.5
+- Name: Consumption%
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0

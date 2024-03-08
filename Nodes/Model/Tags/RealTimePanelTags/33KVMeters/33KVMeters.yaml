@@ -1,0 +1,23 @@
+Name: 33KVMeters
+Type: FolderType
+Children:
+- File: SPP_1/SPP_1.yaml
+- File: SPP_2/SPP_2.yaml
+- File: Spare_1/Spare_1.yaml
+- File: Spare_2/Spare_2.yaml
+- File: Utility_1/Utility_1.yaml
+- File: Utility_2/Utility_2.yaml
+- File: Stamping_1/Stamping_1.yaml
+- File: Stamping_2/Stamping_2.yaml
+- File: TCF_1/TCF_1.yaml
+- File: TCF_2/TCF_2.yaml
+- File: BodyShop_1/BodyShop_1.yaml
+- File: BodyShop_2/BodyShop_2.yaml
+- File: EngineShop_1/EngineShop_1.yaml
+- File: EngineShop_2/EngineShop_2.yaml
+- File: PaintShop_1/PaintShop_1.yaml
+- File: PaintShop_2/PaintShop_2.yaml
+- File: EB_Incomer/EB_Incomer.yaml
+- File: DG_Incomer/DG_Incomer.yaml
+- File: Incomer1/Incomer1.yaml
+- File: Incomer2/Incomer2.yaml

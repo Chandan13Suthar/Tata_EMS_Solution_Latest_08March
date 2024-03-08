@@ -1,0 +1,60 @@
+Name: Converters
+Type: ConvertersCategoryFolder
+Children:
+- Name: KeyValueConverter2
+  Id: g=a9009d3d2e90660b872a149a2efac6d8
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Type: BaseObjectType
+    Children:
+    - Name: Pair
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Utility"
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Importer/CSVToKeyValueConverter/CSVFile@Value"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: Pair1
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Stamping"
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Importer/CSVToKeyValueConverter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2

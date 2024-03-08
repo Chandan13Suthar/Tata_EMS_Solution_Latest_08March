@@ -1,0 +1,12 @@
+Name: JaseWise
+Type: FolderType
+Children:
+- File: 33kv/33kv.yaml
+- File: SPP/SPP.yaml
+- File: Spare/Spare.yaml
+- File: Utility/Utility.yaml
+- File: Stamping/Stamping.yaml
+- File: TCF/TCF.yaml
+- File: Bodyshop/Bodyshop.yaml
+- File: Engineshop/Engineshop.yaml
+- File: Paintshop/Paintshop.yaml

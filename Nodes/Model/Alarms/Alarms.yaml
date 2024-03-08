@@ -1,0 +1,193 @@
+Name: Alarms
+Type: FolderType
+Children:
+- Name: Temperature
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Voltage
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Pressure
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: DigitalMail
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: AnalogMail
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: -1
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+- Class: DataType
+  Name: Alarm_Zones
+  Id: g=3c127255eb3604c354f2afa60ed3054d
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Alarm_Zones",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3c127255eb3604c354f2afa60ed3054d",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='33KV'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "33 KV SubStation"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='Utility'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Utility Area"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='PUMPROOM'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Pump Room"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='PAINTSHOP'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Paint Shop"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='Zone1' OR Area='BODYSHOP'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Body Shop"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='TCFSTATION'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF Station"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='STAMPING'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Stamping"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='ADMIN'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Admin"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SELECT * FROM Model WHERE Area='33KV' OR Area = 'Utility' OR Area = 'PUMPROOM' OR Area = 'PAINTSHOP' OR Area = 'BODYSHOP' OR Area = 'TCFSTATION' OR Area = 'STAMPING' OR Area = 'ADMIN'"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "All"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='33KV'"},"Description":{"LocaleId":"en-US","Text":"33 KV SubStation"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='Utility'"},"Description":{"LocaleId":"en-US","Text":"Utility Area"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='PUMPROOM'"},"Description":{"LocaleId":"en-US","Text":"Pump Room"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='PAINTSHOP'"},"Description":{"LocaleId":"en-US","Text":"Paint Shop"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='Zone1' OR Area='BODYSHOP'"},"Description":{"LocaleId":"en-US","Text":"Body Shop"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='TCFSTATION'"},"Description":{"LocaleId":"en-US","Text":"TCF Station"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='STAMPING'"},"Description":{"LocaleId":"en-US","Text":"Stamping"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='ADMIN'"},"Description":{"LocaleId":"en-US","Text":"Admin"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"SELECT * FROM Model WHERE Area='33KV' OR Area = 'Utility' OR Area = 'PUMPROOM' OR Area = 'PAINTSHOP' OR Area = 'BODYSHOP' OR Area = 'TCFSTATION' OR Area = 'STAMPING' OR Area = 'ADMIN'"},"Description":{"LocaleId":"en-US","Text":"All"}}}]
+- File: Area/Area.yaml
+- File: Runtime/Runtime.yaml
+- Name: ZoneSelection
+  Id: g=32e424d2b6641b5d862f3fb743add650
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM Model WHERE Area = '33KV' OR Area = 'Utility' OR Area = 'PUMPROOM' OR Area = 'PAINTSHOP' OR Area = 'BODYSHOP' OR Area = 'TCFSTATION' OR  Area = 'STAMPING' OR Area = 'ADMIN'"
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Date
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"

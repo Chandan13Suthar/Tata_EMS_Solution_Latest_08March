@@ -1,0 +1,12 @@
+Name: ConsumptionDistribution
+Type: FolderType
+Children:
+- File: 33KV/33KV.yaml
+- File: Utility/Utility.yaml
+- File: Stampting/Stampting.yaml
+- File: TCF/TCF.yaml
+- File: BodyShop/BodyShop.yaml
+- File: EngineShop/EngineShop.yaml
+- File: PaintShop/PaintShop.yaml
+- File: SPP/SPP.yaml
+- File: Spare/Spare.yaml

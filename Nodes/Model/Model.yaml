@@ -1,0 +1,3028 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Panel_Selection/Panel_Selection.yaml
+- File: Data/Data.yaml
+- File: Favorites/Favorites.yaml
+- File: Alarms/Alarms.yaml
+- File: Reports/Reports.yaml
+- File: MarginsForRetentivity/MarginsForRetentivity.yaml
+- File: Comparision_Dashboard/Comparision_Dashboard.yaml
+- File: Histo_Dashboard/Histo_Dashboard.yaml
+- File: DateTime/DateTime.yaml
+- Class: DataType
+  Name: DateAndTimeFormatEnum
+  Id: g=2f4be27b875cbb2fd8089da23715e36a
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "DateAndTimeEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2f4be27b875cbb2fd8089da23715e36a",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short date and time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "g"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended date and time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "F"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ShortDateAndTime, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "X"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ExtendedDateAndTime, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "x"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Complete Universal date and time, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "U"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short date, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "p"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended date, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "P"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short date, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "d"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended date, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "D"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "t"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "T"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short time, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "h"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ExtendedTime,UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "H"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":34,"TextId":"ShortDateTimeLocal"},"Description":{"LocaleId":"en-US","Text":"g"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":34,"TextId":"ExtendedDateTimeLocal"},"Description":{"LocaleId":"en-US","Text":"F"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":34,"TextId":"ShortDateTimeUtc"},"Description":{"LocaleId":"en-US","Text":"X"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":34,"TextId":"ExtendedDateTimeUtc"},"Description":{"LocaleId":"en-US","Text":"x"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":34,"TextId":"CompleteUniversalDateTimeUtc"},"Description":{"LocaleId":"en-US","Text":"U"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"NamespaceIndex":34,"TextId":"ShortDateLocal"},"Description":{"LocaleId":"en-US","Text":"p"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"NamespaceIndex":34,"TextId":"ExtendedDateLocal"},"Description":{"LocaleId":"en-US","Text":"P"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"NamespaceIndex":34,"TextId":"ShortDateUtc"},"Description":{"LocaleId":"en-US","Text":"d"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"NamespaceIndex":34,"TextId":"ExtendedDateUtc"},"Description":{"LocaleId":"en-US","Text":"D"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"NamespaceIndex":34,"TextId":"ShortTimeLocal"},"Description":{"LocaleId":"en-US","Text":"t"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"NamespaceIndex":34,"TextId":"ExtendedTimeLocal"},"Description":{"LocaleId":"en-US","Text":"T"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"NamespaceIndex":34,"TextId":"ShortTimeUtc"},"Description":{"LocaleId":"en-US","Text":"h"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"NamespaceIndex":34,"TextId":"ExtendedTimeUtc"},"Description":{"LocaleId":"en-US","Text":"H"}}}]
+- Class: DataType
+  Name: NumericFormatEnum
+  Id: g=4098c6effa6d407128022aa8840d787b
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "NumericFormatEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4098c6effa6d407128022aa8840d787b",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Numerical, without thousands separator"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "d"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Numerical, with thousands separator"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "n"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Exponential notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "e"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Fixed-point notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "f"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Percentage"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "p"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":34,"TextId":"NumericalNoSeparator"},"Description":{"LocaleId":"en-US","Text":"d"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":34,"TextId":"NumericalThousandsSeparator"},"Description":{"LocaleId":"en-US","Text":"n"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":34,"TextId":"ExponentialNotation"},"Description":{"LocaleId":"en-US","Text":"e"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":34,"TextId":"FixedPointNotation"},"Description":{"LocaleId":"en-US","Text":"f"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":34,"TextId":"Percentage"},"Description":{"LocaleId":"en-US","Text":"p"}}}]
+- Class: DataType
+  Name: BinaryFormatEnum
+  Id: g=97e2eb036b97ad3c155ad99519dd7dbb
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "BinaryFormatEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "97e2eb036b97ad3c155ad99519dd7dbb",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Hexadecimal notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "x"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Binary notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "b"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Octal notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "o"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":34,"TextId":"HexadecimalNotation"},"Description":{"LocaleId":"en-US","Text":"x"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":34,"TextId":"BinaryNotation"},"Description":{"LocaleId":"en-US","Text":"b"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":34,"TextId":"OctalNotation"},"Description":{"LocaleId":"en-US","Text":"o"}}}]
+- Class: DataType
+  Name: UpperLowerFormatEnum
+  Id: g=177c91ef9223819e794c6e2b13ebbf0b
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "UpperLowerFormatEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "177c91ef9223819e794c6e2b13ebbf0b",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All lowercase"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "l"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All uppercase"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "u"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All first letters uppercase"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "t"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Case independent"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "f"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":34,"TextId":"Lowercase"},"Description":{"LocaleId":"en-US","Text":"l"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":34,"TextId":"Uppercase"},"Description":{"LocaleId":"en-US","Text":"u"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":34,"TextId":"PascalCase"},"Description":{"LocaleId":"en-US","Text":"t"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":34,"TextId":"CaseIndependent"},"Description":{"LocaleId":"en-US","Text":"f"}}}]
+- Class: DataType
+  Name: ZoomModeEnum
+  Id: g=7145432984a0a97b2ed75a5b73c82564
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "ZoomModeEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7145432984a0a97b2ed75a5b73c82564",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "NamespaceIndex": 34,
+       "TextId": "FitWidth"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "NamespaceIndex": 34,
+       "TextId": "FitHeight"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "NamespaceIndex": 34,
+       "TextId": "FitPage"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "NamespaceIndex": 34,
+       "TextId": "ActualSize"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "NamespaceIndex": 34,
+       "TextId": "CustomLevel"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":34,"TextId":"FitWidth"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":34,"TextId":"FitHeight"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":34,"TextId":"FitPage"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":34,"TextId":"ActualSize"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":34,"TextId":"CustomLevel"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- File: Tags/Tags.yaml
+- File: Folder1/Folder1.yaml
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ComparisionInstance
+  Type: Comparision
+  Children:
+  - Name: RuntimeNetLogic2
+    Type: NetLogic
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Reports/Third Report/Date"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Target
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Yearlowest
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Monthlowest
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Average
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: GBUTTON
+    Id: g=e81d273ffb51d031bccc4fe5656aa0a3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: JaceStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionStamping
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionTcf
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionBodyshop
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionEngineshop
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JacePaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetPaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestPaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestPaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AveragePaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionPaintshop
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionSpp
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionSpare
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Target33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Yearlowest33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Monthlowest33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Average33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Consumption33KV
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Utilitypercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Stampingpercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Bodyshoppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Engineshoppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Paintshoppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Spppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Sparepercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Tcfpercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: Comparision
+  Id: g=8d89a5fce1435f2e42dcb0f1e89bcaab
+  Supertype: BaseObjectType
+  Children:
+  - Name: RuntimeNetLogic2
+    Type: NetLogic
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Target
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Yearlowest
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Monthlowest
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Average
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: GBUTTON
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: JaceStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageStamping
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionStamping
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageTcf
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionTcf
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageBodyshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionBodyshop
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageEngineshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionEngineshop
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JacePaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetPaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestPaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestPaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AveragePaintshop
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionPaintshop
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionSpp
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: JaceSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TargetSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: YearlowestSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MonthlowestSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpare
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConsumptionSpare
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Target33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Yearlowest33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Monthlowest33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Average33KV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Consumption33KV
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Utilitypercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Stampingpercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Bodyshoppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Engineshoppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Paintshoppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Spppercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Sparepercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Tcfpercentage
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: HistoDashboardInstance
+  Type: HistoDashboard
+  Children:
+  - Name: Datefrom
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Histo Dashboard/Datefrom"
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Histo Dashboard/JaceSelected"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Histo Dashboard/Meterselected"
+  - Name: Maxconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Dateto
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Histo Dashboard/Dateto"
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RuntimeNetLogic1
+    Type: NetLogic
+  - Name: Button1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: HistoDashboard
+  Id: g=c92c97590d04d0688370490fb5310e7b
+  Supertype: BaseObjectType
+  Children:
+  - Name: Datefrom
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Histo Dashboard/Datefrom"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Histo Dashboard/JaceSelected"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Histo Dashboard/Meterselected"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Maxconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Dateto
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Histo Dashboard/Dateto"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RuntimeNetLogic1
+    Type: NetLogic
+  - Name: Button1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: _33KVAlarm1
+  Type: _33KVAlarm
+  Children:
+  - Name: AvgConsumptionIncomer1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionEBIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionDGIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN1OG1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN1OG2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN1OG3new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN1OG4new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN1OG5new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG6new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN1OG7new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN2OG8new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN2OG9new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN2G10new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN2OG11new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN2OG12new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN2OG13new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN2OG14new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN2OG15new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN1OG16new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RuntimeNetLogic4
+    Type: NetLogic
+  - Name: AvgConsumptionEBIN1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionDGIN1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AlarmIncomer1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmIncomer2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmEBIN1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmDGIN1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Date"
+  - Name: AvgPfIncomer1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfEBIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfDGIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN1OG3new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN1OG4new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN1OG5new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN1OG6new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN1OG7new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN2OG8new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN2OG9new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN2G10new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN2OG11new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN2OG12new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN2OG13new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN2OG14new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN2OG15new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN1OG16new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: _33KVPfAlarmIncomer1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: _33KVPfAlarmIncomer2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: _33KVAlarm
+  Id: g=1ee070ebf8c8512f95444c9c70a33260
+  Supertype: BaseObjectType
+  Children:
+  - Name: AvgConsumptionIncomer1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionEBIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionDGIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN1OG1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN1OG2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN1OG3new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN1OG4new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN1OG5new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG6new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN1OG7new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN2OG8new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN2OG9new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN2G10new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN2OG11new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN2OG12new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN2OG13new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN2OG14new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN2OG15new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN1OG16new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RuntimeNetLogic4
+    Type: NetLogic
+  - Name: AvgConsumptionEBIN1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionDGIN1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AlarmIncomer1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmIncomer2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmEBIN1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmDGIN1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Date"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: AvgPfIncomer1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfEBIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfDGIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN1OG3new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN1OG4new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN1OG5new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN1OG6new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN1OG7new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN2OG8new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN2OG9new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN2G10new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN2OG11new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN2OG12new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN2OG13new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN2OG14new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN2OG15new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN1OG16new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: _33KVPfAlarmIncomer1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: _33KVPfAlarmIncomer2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: _33KVAlarmInstance
+  Type: _33KVAlarm
+  Children:
+  - Name: AvgConsumptionIncomer1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionEBIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionDGIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionIncomer2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN1OG1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN1OG2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN1OG3new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN1OG4new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN1OG5new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG6new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN1OG1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN1OG7new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionPAINTSHOPIN2OG8new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionENGINESHOPIN2OG9new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionBODYSHOPIN2G10new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionTCFIN2OG11new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSTAMPINGIN2OG12new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionUTILITYIN2OG13new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPAREIN2OG14new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN2OG15new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionSPPShopIN1OG16new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RuntimeNetLogic4
+    Type: NetLogic
+  - Name: AvgConsumptionEBIN1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgConsumptionDGIN1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AlarmIncomer1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmIncomer2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmEBIN1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AlarmDGIN1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Date"
+  - Name: AvgPfIncomer1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN1OG1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN1OG2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN1OG3
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN1OG4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN1OG5
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN1OG6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN1OG7
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN2OG8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN2OG9
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN2G10
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN2OG11
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN2OG12
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN2OG13
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN2OG14
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN2OG15
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN1OG16
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfEBIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfDGIN1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer1new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfIncomer2new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN1OG3new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN1OG4new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN1OG5new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN1OG6new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN1OG7new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfPAINTSHOPIN2OG8new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfENGINESHOPIN2OG9new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfBODYSHOPIN2G10new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfTCFIN2OG11new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSTAMPINGIN2OG12new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfUTILITYIN2OG13new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPAREIN2OG14new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN2OG15new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPfSPPShopIN1OG16new
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: _33KVPfAlarmIncomer1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: _33KVPfAlarmIncomer2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: hourlydata
+  Type: BaseObjectType
+  Children:
+  - Name: Datetime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Avgpf
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Avgfrequency
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+- Name: ComparisionDashboardInstance
+  Type: ComparisionDashboard
+  Children:
+  - Name: Datefrom
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Datefrom"
+  - Name: Dateto
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Dateto"
+  - Name: Maxconsumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Maxconsumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Jaceselected1"
+  - Name: Jace2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Jaceselected2"
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Meterselected1"
+  - Name: Meter2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Meterselected2"
+  - Name: RuntimeNetLogic3
+    Type: NetLogic
+  - Name: Button1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Button2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: ComparisionDashboard
+  Id: g=0da78a672ae27b69ae302ef010613bd3
+  Supertype: BaseObjectType
+  Children:
+  - Name: Datefrom
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Datefrom"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Dateto
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Dateto"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Maxconsumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Maxconsumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Jaceselected1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Jace2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Jaceselected2"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Meterselected1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Meter2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Meterselected2"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: RuntimeNetLogic3
+    Type: NetLogic
+  - Name: Button1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Button2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: ComparisionDashboard1
+  Type: ComparisionDashboard
+  Children:
+  - Name: Datefrom
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Datefrom"
+  - Name: Dateto
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Dateto"
+  - Name: Maxconsumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Maxconsumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgpf2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Avgfrequency2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Consumption2
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Jaceselected1"
+  - Name: Jace2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Jaceselected2"
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Meterselected1"
+  - Name: Meter2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../Comparision_Dashboard/Meterselected2"
+  - Name: RuntimeNetLogic3
+    Type: NetLogic
+  - Name: Button1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Button2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- File: Importer/Importer.yaml
+- Name: ButtonGenerator
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- File: Testing_Histo/Testing_Histo.yaml
+- File: Demo/Demo.yaml
+- Name: HourlyDataAggregationInstance
+  Type: HourlyDataAggregation
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: HourlyDataAggregation
+  Id: g=ca1787a7be38bbce65e3a072f3f2dd39
+  Supertype: BaseObjectType
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: ObjectInstance
+  Type: Object
+  Children:
+  - Name: Counter
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Incomer1Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "33kv"
+  - Name: Incomer2Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "utility"
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Income1Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Income2Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: RuntimeNetLogic6
+    Type: NetLogic
+  - Name: Incomer3Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Bodyshop"
+  - Name: Incomer4Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Paintshop"
+  - Name: Incomer5Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pumproom"
+  - Name: Incomer3Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: Incomer4Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 40
+  - Name: Incomer5Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+- Name: Object
+  Id: g=990df0512f7fb04cb24d5c7c25834b9d
+  Supertype: BaseObjectType
+  Children:
+  - Name: Counter
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Incomer1Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "33kv"
+  - Name: Incomer2Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "utility"
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Income1Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Income2Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: RuntimeNetLogic6
+    Type: NetLogic
+  - Name: Incomer3Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Bodyshop"
+  - Name: Incomer4Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Paintshop"
+  - Name: Incomer5Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pumproom"
+  - Name: Incomer3Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: Incomer4Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 40
+  - Name: Incomer5Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+- Name: Object1
+  Type: Object
+  Children:
+  - Name: Counter
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Incomer1Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "33kv"
+  - Name: Incomer2Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "utility"
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Income1Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Income2Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: RuntimeNetLogic6
+    Type: NetLogic
+  - Name: Incomer3Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Bodyshop"
+  - Name: Incomer4Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Paintshop"
+  - Name: Incomer5Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pumproom"
+  - Name: Incomer3Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: Incomer4Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 40
+  - Name: Incomer5Value
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+- File: Datalogtag/Datalogtag.yaml

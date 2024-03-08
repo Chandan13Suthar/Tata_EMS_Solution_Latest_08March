@@ -1,0 +1,3883 @@
+Name: Histo Dashboard
+Type: FolderType
+Children:
+- Name: Button
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Datefrom
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-02-16T00:00:00.0000000"
+- Name: Dateto
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-02-16T23:59:59.0000000"
+- Class: DataType
+  Name: Select_Comparision
+  Id: g=400cd3110a29d0ef784fe37c335ccba9
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Jace"},"Description":{"LocaleId":"en-US","Text":"Jace"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Meter"},"Description":{"LocaleId":"en-US","Text":"Meter"}}}]
+- Name: Selection_1_Jace
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Class: DataType
+  Name: Selection_1_JaceSelection
+  Id: g=a7fe4caa4606b59d2d1c0b417e4556f2
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"33KV SEGR ROOM"},"Description":{"LocaleId":"en-US","Text":"33KV SEGR ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY"},"Description":{"LocaleId":"en-US","Text":"UTILITY"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"PUMP ROOM"},"Description":{"LocaleId":"en-US","Text":"PUMP ROOM"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"PAINT SHOP"},"Description":{"LocaleId":"en-US","Text":"PAINT SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"BODY SHOP"},"Description":{"LocaleId":"en-US","Text":"BODY SHOP"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF STATION"},"Description":{"LocaleId":"en-US","Text":"TCF STATION"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING"},"Description":{"LocaleId":"en-US","Text":"STAMPING"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ADMIN"},"Description":{"LocaleId":"en-US","Text":"ADMIN"}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_33kv
+  Id: g=e257c6fa10688e32ea175ca85639d61f
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Selection_1_MeterSelection_33kv",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e257c6fa10688e32ea175ca85639d61f",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Incomer_1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Incomer_1"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Incomer_2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Incomer_2"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN1_OG1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN1_OG1"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN1_OG2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN1_OG2"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN1_OG3"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN1_OG3"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN1_OG4"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN1_OG4"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN1_OG5"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN1_OG5"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN1_OG6"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN1_OG6"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN1_OG7"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN1_OG7"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN2_OG8"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PAINT_SHOP_IN2_OG8"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN2_OG9"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "ENGINE_SHOP_IN2_OG9"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN2_G10"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "BODY_SHOP_IN2_G10"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN2_OG11"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "TCF_IN2_OG11"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN2_OG12"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STAMPING_IN2_OG12"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN2_OG13"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "UTILITY_IN2_OG13"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN2_OG14"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPARE_IN2_OG14"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN2_OG15"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN2_OG15"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN1_OG16"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "SPP_Shop_IN1_OG16"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "EB_IN1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "EB_IN1"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "DG_IN1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "DG_IN1"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_1"},"Description":{"LocaleId":"en-US","Text":"Incomer_1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Incomer_2"},"Description":{"LocaleId":"en-US","Text":"Incomer_2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN1_OG1"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN1_OG2"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN1_OG3"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"},"Description":{"LocaleId":"en-US","Text":"TCF_IN1_OG4"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN1_OG5"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN1_OG6"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN1_OG7"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"},"Description":{"LocaleId":"en-US","Text":"PAINT_SHOP_IN2_OG8"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"},"Description":{"LocaleId":"en-US","Text":"ENGINE_SHOP_IN2_OG9"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"},"Description":{"LocaleId":"en-US","Text":"BODY_SHOP_IN2_G10"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"},"Description":{"LocaleId":"en-US","Text":"TCF_IN2_OG11"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"},"Description":{"LocaleId":"en-US","Text":"STAMPING_IN2_OG12"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"},"Description":{"LocaleId":"en-US","Text":"UTILITY_IN2_OG13"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"},"Description":{"LocaleId":"en-US","Text":"SPARE_IN2_OG14"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN2_OG15"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"},"Description":{"LocaleId":"en-US","Text":"SPP_Shop_IN1_OG16"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"EB_IN1"},"Description":{"LocaleId":"en-US","Text":"EB_IN1"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"DG_IN1"},"Description":{"LocaleId":"en-US","Text":"DG_IN1"}}}]
+- Name: Comparision_Selection
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Class: DataType
+  Name: Selection_1_MeterSelection_utility
+  Id: g=ed9328f951aab97d93505647b42fe570
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_IN1"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_IN1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_IN2"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_IN2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F4"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F4"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F5"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F5"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F6"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F6"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F7"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F7"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F8"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_01_O/G_F8"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F3"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F3"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F4"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F4"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F5"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F5"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F6"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F6"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F7"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F7"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F8"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F8"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F9"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_02_O/G_F9"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_03_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_03_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_03_O/G_F3"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_03_O/G_F3"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_03_O/G_F4"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_03_O/G_F4"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MVS_03_O/G_F5"},"Description":{"LocaleId":"en-US","Text":"MCB_MVS_03_O/G_F5"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_01_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_01_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_2F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_2F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_3F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_4F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_4F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_5F2"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_5F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_4F2"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_01_O/G_4F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_2F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_2F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_2F2"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_2F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_3F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_3F2"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_3F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_4F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_4F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_4F2"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_4F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_5F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_02_O/G_5F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_03_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_03_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_03_O/G_2F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_03_O/G_2F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"MCB_SWB_03_O/G_3F1"},"Description":{"LocaleId":"en-US","Text":"MCB_SWB_03_O/G_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_2F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_2F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_2F2"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_2F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_3F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_3F2"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_3F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_4F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_4F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_4F2"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_4F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_5F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_5F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_5F2"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_5F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_6F2"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_04_O/G_6F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_2F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_2F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_3F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_4F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_4F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_5F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_5F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_6F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_6F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_7F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_7F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_8F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_03_O/G_8F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_IN1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_IN1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_2F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_2F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_3F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_4F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_4F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_5F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_5F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_6F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_6F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_7F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_7F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_8F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_05_O/G_8F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_1F1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_1F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG1"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG1"}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG2"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG2"}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG3"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG3"}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG4"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG4"}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG5"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG5"}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG6"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG6"}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG7"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG7"}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG8"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG8"}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG9"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG9"}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG10"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG10"}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG11"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG11"}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG12"},"Description":{"LocaleId":"en-US","Text":"MCB_MCC_01_OG12"}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_pumproom
+  Id: g=d3c9af8799e3a10eef87b72929eedccf
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"WTK-1-PMCC-0-01"},"Description":{"LocaleId":"en-US","Text":"WTK-1-PMCC-0-01"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J06_M2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"J06_M3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"J06_M4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"J06_M5"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"J06_M6"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"J06_M7"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_paintshop
+  Id: g=756bdd895c1d73d0e79c8619bb296eb6
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Selection_1_MeterSelection_paintshop",
+    "DataType": {
+     "IdType": 2,
+     "Id": "756bdd895c1d73d0e79c8619bb296eb6",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_IN_F1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_IN_F1"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_IN_F2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_IN_F2"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F4"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F4"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F5"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F5"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F6"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F6"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F7"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F7"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F8"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F8"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F9"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F9"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F10"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F10"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F11"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "PNT_MVS_01_OG_F11"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M11"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M11"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M12"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M12"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M13"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M13"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M14"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M14"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M15"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M15"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M16"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M16"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M17"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M17"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M18"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M18"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M19"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M19"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M20"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M20"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M21"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M21"
+      }
+     },{
+      "Name": "Value21",
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M22"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M22"
+      }
+     },{
+      "Name": "Value22",
+      "Value": 22,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M23"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M23"
+      }
+     },{
+      "Name": "Value23",
+      "Value": 23,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M24"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M24"
+      }
+     },{
+      "Name": "Value24",
+      "Value": 24,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M25"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M25"
+      }
+     },{
+      "Name": "Value25",
+      "Value": 25,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M26"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M26"
+      }
+     },{
+      "Name": "Value26",
+      "Value": 26,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M27"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M27"
+      }
+     },{
+      "Name": "Value27",
+      "Value": 27,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M28"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M28"
+      }
+     },{
+      "Name": "Value28",
+      "Value": 28,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M29"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M29"
+      }
+     },{
+      "Name": "Value29",
+      "Value": 29,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M30"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M30"
+      }
+     },{
+      "Name": "Value30",
+      "Value": 30,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M31"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M31"
+      }
+     },{
+      "Name": "Value31",
+      "Value": 31,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M32"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M32"
+      }
+     },{
+      "Name": "Value32",
+      "Value": 32,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M33"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M33"
+      }
+     },{
+      "Name": "Value33",
+      "Value": 33,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M34"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M34"
+      }
+     },{
+      "Name": "Value34",
+      "Value": 34,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M35"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M35"
+      }
+     },{
+      "Name": "Value35",
+      "Value": 35,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M36"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M36"
+      }
+     },{
+      "Name": "Value36",
+      "Value": 36,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M37"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M37"
+      }
+     },{
+      "Name": "Value37",
+      "Value": 37,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M38"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M38"
+      }
+     },{
+      "Name": "Value38",
+      "Value": 38,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M39"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M39"
+      }
+     },{
+      "Name": "Value39",
+      "Value": 39,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M40"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M40"
+      }
+     },{
+      "Name": "Value40",
+      "Value": 40,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J08_M41"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "J08_M41"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_IN_F1"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_IN_F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_IN_F2"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_IN_F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F4"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F4"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F5"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F5"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F6"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F6"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F7"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F7"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F8"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F8"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F9"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F9"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F10"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F10"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F11"},"Description":{"LocaleId":"en-US","Text":"PNT_MVS_01_OG_F11"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"J08_M11"},"Description":{"LocaleId":"en-US","Text":"J08_M11"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"J08_M12"},"Description":{"LocaleId":"en-US","Text":"J08_M12"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"J08_M13"},"Description":{"LocaleId":"en-US","Text":"J08_M13"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"J08_M14"},"Description":{"LocaleId":"en-US","Text":"J08_M14"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"J08_M15"},"Description":{"LocaleId":"en-US","Text":"J08_M15"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"J08_M16"},"Description":{"LocaleId":"en-US","Text":"J08_M16"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"J08_M17"},"Description":{"LocaleId":"en-US","Text":"J08_M17"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"J08_M18"},"Description":{"LocaleId":"en-US","Text":"J08_M18"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"J08_M19"},"Description":{"LocaleId":"en-US","Text":"J08_M19"}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"J08_M20"},"Description":{"LocaleId":"en-US","Text":"J08_M20"}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"J08_M21"},"Description":{"LocaleId":"en-US","Text":"J08_M21"}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"J08_M22"},"Description":{"LocaleId":"en-US","Text":"J08_M22"}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"J08_M23"},"Description":{"LocaleId":"en-US","Text":"J08_M23"}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"J08_M24"},"Description":{"LocaleId":"en-US","Text":"J08_M24"}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"J08_M25"},"Description":{"LocaleId":"en-US","Text":"J08_M25"}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"J08_M26"},"Description":{"LocaleId":"en-US","Text":"J08_M26"}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"LocaleId":"en-US","Text":"J08_M27"},"Description":{"LocaleId":"en-US","Text":"J08_M27"}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"LocaleId":"en-US","Text":"J08_M28"},"Description":{"LocaleId":"en-US","Text":"J08_M28"}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"LocaleId":"en-US","Text":"J08_M29"},"Description":{"LocaleId":"en-US","Text":"J08_M29"}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"LocaleId":"en-US","Text":"J08_M30"},"Description":{"LocaleId":"en-US","Text":"J08_M30"}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"LocaleId":"en-US","Text":"J08_M31"},"Description":{"LocaleId":"en-US","Text":"J08_M31"}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"J08_M32"},"Description":{"LocaleId":"en-US","Text":"J08_M32"}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"J08_M33"},"Description":{"LocaleId":"en-US","Text":"J08_M33"}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"J08_M34"},"Description":{"LocaleId":"en-US","Text":"J08_M34"}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"J08_M35"},"Description":{"LocaleId":"en-US","Text":"J08_M35"}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"J08_M36"},"Description":{"LocaleId":"en-US","Text":"J08_M36"}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"en-US","Text":"J08_M37"},"Description":{"LocaleId":"en-US","Text":"J08_M37"}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"en-US","Text":"J08_M38"},"Description":{"LocaleId":"en-US","Text":"J08_M38"}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"en-US","Text":"J08_M39"},"Description":{"LocaleId":"en-US","Text":"J08_M39"}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"en-US","Text":"J08_M40"},"Description":{"LocaleId":"en-US","Text":"J08_M40"}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"en-US","Text":"J08_M41"},"Description":{"LocaleId":"en-US","Text":"J08_M41"}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_bodyshop
+  Id: g=7192b33cb8c5460367504e870375cf45
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_01_IN1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_01_IN2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_01_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_01_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_01_OG_F6"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_01_OG_F7"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_01_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_02_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_02_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_03_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_03_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_03_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_03_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_03_OG_F5"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F5"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F6"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F7"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_08_OG_F8"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_02_IN1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_02_IN2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_02_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_02_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_02_OG_F6"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"LocaleId":"en-US","Text":"BDY_MVS_02_OG_F7"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_04_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_04_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_05_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_05_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_05_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_06_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_06_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_06_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_06_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_07_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_07_OG_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_07_OG_F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"LocaleId":"en-US","Text":"BDY_SWB_07_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_tcf
+  Id: g=3f864bc7d043dbdb3cb078a832b6bd8c
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"TCF_MVS_01_IN_F1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"TCF_MVS_01_IN_F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"TCF_MVS_01_OG_F4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"TCF_MVS_01_OG_F5"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"TCF_MVS_01_OG_F6"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"WH_TCF_SWB_01_IN1F2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"WH_TCF_SWB_01_OG_2F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"WH_TCF_SWB_01_OG_3F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"WH_TCF_SWB_01_OG_4F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"WH_TCF_SWB_01_OG_5F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_IN1F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_OG_2F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_OG_3F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_OG_4F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_OG_5F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_OG_6F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-01_OG_7F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-02_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-02_OG_2F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-02_OG_3F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-02_OG_4F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"TCF-SWB-02_OG_6F3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_stamping
+  Id: g=5f9451612d8e3ad3301d3fe6b4daf4d4
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Selection_1_MeterSelection_stamping",
+    "DataType": {
+     "IdType": 2,
+     "Id": "5f9451612d8e3ad3301d3fe6b4daf4d4",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_IN_F1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_IN_F1"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_IN_F2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_IN_F2"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F4"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F4"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F5"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F5"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F6"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F6"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F7"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F7"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F8"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_MVS_01_OG_F8"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_01_INF1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_01_INF1"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_01_OG_3F"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_01_OG_3F"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_INF1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_INF1"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_2F"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_2F"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_3F1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_3F1"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_3F2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_3F2"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_4F1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_4F1"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_4F2"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_4F2"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_5F1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_02_OG_5F1"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_03_INF1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_03_INF1"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_04_INF1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_04_INF1"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_05_INF1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "STP_SWB_05_INF1"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_IN_F1"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_IN_F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_IN_F2"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_IN_F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F4"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F4"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F5"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F5"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F6"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F6"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F7"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F7"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F8"},"Description":{"LocaleId":"en-US","Text":"STP_MVS_01_OG_F8"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_01_INF1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_01_INF1"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_01_OG_3F"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_01_OG_3F"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_INF1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_INF1"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_2F"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_2F"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_3F1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_3F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_3F2"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_3F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_4F1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_4F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_4F2"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_4F2"}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_5F1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_02_OG_5F1"}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_03_INF1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_03_INF1"}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_04_INF1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_04_INF1"}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"STP_SWB_05_INF1"},"Description":{"LocaleId":"en-US","Text":"STP_SWB_05_INF1"}}}]
+- Class: DataType
+  Name: Selection_1_MeterSelection_admin
+  Id: g=76056d43614fd15bd875a9efa4f99962
+  Supertype: Enumeration
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"ADM-DB-01_INF1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"ADM-EDB-01_INF2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Selection1_33KV
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Selection1_Utility
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Selection1_Bodyshop
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Selection1_Paintshop
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Selection1_Admin
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Selection1_Tcf
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Selection1_Stamping
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Meterselected
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Selection_1_Jace"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 0
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_33KV"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Incomer_1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Incomer_2"
+              - Name: Pair2
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 2
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "SPARE_IN1_OG1"
+              - Name: Pair3
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 3
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "UTILITY_IN1_OG2"
+              - Name: Pair4
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 4
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STAMPING_IN1_OG3"
+              - Name: Pair5
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 5
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_IN1_OG4"
+              - Name: Pair6
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 6
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BODY_SHOP_IN1_OG5"
+              - Name: Pair7
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 7
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ENGINE_SHOP_IN1_OG6"
+              - Name: Pair8
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 8
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PAINT_SHOP_IN1_OG7"
+              - Name: Pair9
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 9
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PAINT_SHOP_IN2_OG8"
+              - Name: Pair10
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 10
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ENGINE_SHOP_IN2_OG9"
+              - Name: Pair11
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 11
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BODY_SHOP_IN2_G10"
+              - Name: Pair12
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 12
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_IN2_OG11"
+              - Name: Pair13
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 13
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STAMPING_IN2_OG12"
+              - Name: Pair14
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 14
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "UTILITY_IN2_OG13"
+              - Name: Pair15
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 15
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "SPARE_IN2_OG14"
+              - Name: Pair16
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 16
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "SPP_Shop_IN2_OG15"
+              - Name: Pair17
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 17
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "SPP_Shop_IN1_OG16"
+              - Name: Pair18
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 18
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "EB_IN1"
+              - Name: Pair19
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 19
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "DG_IN1"
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_Utility"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_IN1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_IN2"
+              - Name: Pair2
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 2
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_O/G_F4"
+              - Name: Pair3
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 3
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_O/G_F5"
+              - Name: Pair4
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 4
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_O/G_F6"
+              - Name: Pair5
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 5
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_O/G_F7"
+              - Name: Pair6
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 6
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_01_O/G_F8"
+              - Name: Pair7
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 7
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_IN1F1"
+              - Name: Pair8
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 8
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F3"
+              - Name: Pair9
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 9
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F4"
+              - Name: Pair10
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 10
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F5"
+              - Name: Pair11
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 11
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F6"
+              - Name: Pair12
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 12
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F7"
+              - Name: Pair13
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 13
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F8"
+              - Name: Pair14
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 14
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_02_O/G_F9"
+              - Name: Pair15
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 15
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_03_IN1F1"
+              - Name: Pair16
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 16
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_03_O/G_F3"
+              - Name: Pair17
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 17
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_03_O/G_F4"
+              - Name: Pair18
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 18
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MVS_03_O/G_F5"
+              - Name: Pair19
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 19
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_01_IN1F1"
+              - Name: Pair20
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 20
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_01_O/G_2F1"
+              - Name: Pair21
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 21
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_01_O/G_3F1"
+              - Name: Pair22
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 22
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_01_O/G_4F1"
+              - Name: Pair23
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 23
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_01_O/G_5F2"
+              - Name: Pair24
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 24
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_01_O/G_4F2"
+              - Name: Pair25
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 25
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_IN1F1"
+              - Name: Pair26
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 26
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_2F1"
+              - Name: Pair27
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 27
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_2F2"
+              - Name: Pair28
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 28
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_3F1"
+              - Name: Pair29
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 29
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_3F2"
+              - Name: Pair30
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 30
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_4F1"
+              - Name: Pair31
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 31
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_4F2"
+              - Name: Pair32
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 32
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_02_O/G_5F1"
+              - Name: Pair33
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 33
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_03_IN1F1"
+              - Name: Pair34
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 34
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_03_O/G_2F1"
+              - Name: Pair35
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 35
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_SWB_03_O/G_3F1"
+              - Name: Pair36
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 36
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_IN1F1"
+              - Name: Pair37
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 37
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_2F1"
+              - Name: Pair38
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 38
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_2F2"
+              - Name: Pair39
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 39
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_3F1"
+              - Name: Pair40
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 40
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_3F2"
+              - Name: Pair41
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 41
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_4F1"
+              - Name: Pair42
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 42
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_4F2"
+              - Name: Pair43
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 43
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_5F1"
+              - Name: Pair44
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 44
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_5F2"
+              - Name: Pair45
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 45
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_04_O/G_6F2"
+              - Name: Pair46
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 46
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_IN1F1"
+              - Name: Pair47
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 47
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_2F1"
+              - Name: Pair48
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 48
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_3F1"
+              - Name: Pair49
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 49
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_4F1"
+              - Name: Pair50
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 50
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_5F1"
+              - Name: Pair51
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 51
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_6F1"
+              - Name: Pair52
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 52
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_7F1"
+              - Name: Pair53
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 53
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_03_O/G_8F1"
+              - Name: Pair54
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 54
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_01_IN1F1"
+              - Name: Pair55
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 55
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_IN1F1"
+              - Name: Pair56
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 56
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_2F1"
+              - Name: Pair57
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 57
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_3F1"
+              - Name: Pair58
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 58
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_4F1"
+              - Name: Pair59
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 59
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_5F1"
+              - Name: Pair60
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 60
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_6F1"
+              - Name: Pair61
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 61
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_7F1"
+              - Name: Pair62
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 62
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "MCB_MCC_05_O/G_8F1"
+              - Name: Pair63
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 63
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair64
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 64
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair65
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 65
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair66
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 66
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair67
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 67
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair68
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 68
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair69
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 69
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair70
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 70
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair71
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 71
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair72
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 72
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair73
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 73
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair74
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 74
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+              - Name: Pair75
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 75
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_Paintshop"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_IN_F1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_IN_F2"
+              - Name: Pair2
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 2
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F4"
+              - Name: Pair3
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 3
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F5"
+              - Name: Pair4
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 4
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F6"
+              - Name: Pair5
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 5
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F7"
+              - Name: Pair6
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 6
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F8"
+              - Name: Pair7
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 7
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F9"
+              - Name: Pair8
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 8
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F10"
+              - Name: Pair9
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 9
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "PNT_MVS_01_OG_F11"
+              - Name: Pair10
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 10
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M11"
+              - Name: Pair11
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 11
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M12"
+              - Name: Pair12
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 12
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M13"
+              - Name: Pair13
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 13
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M14"
+              - Name: Pair14
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 14
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M15"
+              - Name: Pair15
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 15
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M16"
+              - Name: Pair16
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 16
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M17"
+              - Name: Pair17
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 17
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M18"
+              - Name: Pair18
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 18
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M19"
+              - Name: Pair19
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 19
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M20"
+              - Name: Pair20
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 20
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M21"
+              - Name: Pair21
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 21
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M22"
+              - Name: Pair22
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 22
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M23"
+              - Name: Pair23
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 23
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M24"
+              - Name: Pair24
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 24
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M25"
+              - Name: Pair25
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 25
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M26"
+              - Name: Pair26
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 26
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M27"
+              - Name: Pair27
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 27
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M28"
+              - Name: Pair28
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 28
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M29"
+              - Name: Pair29
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 29
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M30"
+              - Name: Pair30
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 30
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M31"
+              - Name: Pair31
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 31
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M32"
+              - Name: Pair32
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 32
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M33"
+              - Name: Pair33
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 33
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M34"
+              - Name: Pair34
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 34
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M35"
+              - Name: Pair35
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 35
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M36"
+              - Name: Pair36
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 36
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M37"
+              - Name: Pair37
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 37
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M38"
+              - Name: Pair38
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 38
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M39"
+              - Name: Pair39
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 39
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M40"
+              - Name: Pair40
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 40
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "J08_M41"
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_Bodyshop"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_01_IN1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_01_IN1"
+              - Name: Pair2
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 2
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_01_OG_F3"
+              - Name: Pair3
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 3
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_01_OG_F4"
+              - Name: Pair4
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 4
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_01_OG_F6"
+              - Name: Pair5
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 5
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_01_OG_F7"
+              - Name: Pair6
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 6
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_01_INF1"
+              - Name: Pair7
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 7
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_01_OG_F2"
+              - Name: Pair8
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 8
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_02_INF1"
+              - Name: Pair9
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 9
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_02_OG_F2"
+              - Name: Pair10
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 10
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_03_INF1"
+              - Name: Pair11
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 11
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_03_OG_F2"
+              - Name: Pair12
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 12
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_03_OG_F3"
+              - Name: Pair13
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 13
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_03_OG_F4"
+              - Name: Pair14
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 14
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_03_OG_F5"
+              - Name: Pair15
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 15
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_INF1"
+              - Name: Pair16
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 16
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F1"
+              - Name: Pair17
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 17
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F2"
+              - Name: Pair18
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 18
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F3"
+              - Name: Pair19
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 19
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F4"
+              - Name: Pair20
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 20
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F5"
+              - Name: Pair21
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 21
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F6"
+              - Name: Pair22
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 22
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F7"
+              - Name: Pair23
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 23
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_08_OG_F8"
+              - Name: Pair24
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 24
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_02_IN1"
+              - Name: Pair25
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 25
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_02_IN2"
+              - Name: Pair26
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 26
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_02_OG_F3"
+              - Name: Pair27
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 27
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_02_OG_F4"
+              - Name: Pair28
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 28
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_02_OG_F6"
+              - Name: Pair29
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 29
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_MVS_02_OG_F7"
+              - Name: Pair30
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 30
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_04_INF1"
+              - Name: Pair31
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 31
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_04_OG_F2"
+              - Name: Pair32
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 32
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_05_INF1"
+              - Name: Pair33
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 33
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_05_OG_F2"
+              - Name: Pair34
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 34
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_05_OG_F3"
+              - Name: Pair35
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 35
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_06_INF1"
+              - Name: Pair36
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 36
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_06_OG_F2"
+              - Name: Pair37
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 37
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_06_OG_F3"
+              - Name: Pair38
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 38
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_06_OG_F4"
+              - Name: Pair39
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 39
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_07_INF1"
+              - Name: Pair40
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 40
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_07_OG_F2"
+              - Name: Pair41
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 41
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_07_OG_F3"
+              - Name: Pair42
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 42
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "BDY_SWB_07_OG_F4"
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_Tcf"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_MVS_01_IN_F1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_MVS_01_IN_F2"
+              - Name: Pair2
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 2
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_MVS_01_OG_F4"
+              - Name: Pair3
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 3
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_MVS_01_OG_F5"
+              - Name: Pair4
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 4
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF_MVS_01_OG_F6"
+              - Name: Pair5
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 5
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "WH_TCF_SWB_01_IN1F2"
+              - Name: Pair6
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 6
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "WH_TCF_SWB_01_OG_2F3"
+              - Name: Pair7
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 7
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "WH_TCF_SWB_01_OG_3F3"
+              - Name: Pair8
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 8
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "WH_TCF_SWB_01_OG_4F3"
+              - Name: Pair9
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 9
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "WH_TCF_SWB_01_OG_5F3"
+              - Name: Pair10
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 10
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_IN1F3"
+              - Name: Pair11
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 11
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_2F3"
+              - Name: Pair12
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 12
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_3F3"
+              - Name: Pair13
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 13
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_4F3"
+              - Name: Pair14
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 14
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_5F3"
+              - Name: Pair15
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 15
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_6F3"
+              - Name: Pair16
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 16
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_7F3"
+              - Name: Pair17
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 17
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-02_INF1"
+              - Name: Pair18
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 18
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-02_OG_2F3"
+              - Name: Pair19
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 19
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-02_OG_2F3"
+              - Name: Pair20
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 20
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_4F3"
+              - Name: Pair21
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 21
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "TCF-SWB-01_OG_6F3"
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_Stamping"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_IN_F1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_IN_F2"
+              - Name: Pair2
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 2
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_OG_F4"
+              - Name: Pair3
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 3
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_OG_F5"
+              - Name: Pair4
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 4
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_OG_F6"
+              - Name: Pair5
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 5
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_OG_F7"
+              - Name: Pair6
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 6
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_MVS_01_OG_F8"
+              - Name: Pair7
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 7
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_01_INF1"
+              - Name: Pair8
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 8
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_01_OG_3F"
+              - Name: Pair9
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 9
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_INF1"
+              - Name: Pair10
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 10
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_OG_2F"
+              - Name: Pair11
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 11
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_OG_3F1"
+              - Name: Pair12
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 12
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_OG_3F2"
+              - Name: Pair13
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 13
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_OG_4F1"
+              - Name: Pair14
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 14
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_OG_4F2"
+              - Name: Pair15
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 15
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_02_OG_5F1"
+              - Name: Pair16
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 16
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_03_INF1"
+              - Name: Pair17
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 17
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_04_INF1"
+              - Name: Pair18
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 18
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "STP_SWB_05_INF1"
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+          Children:
+          - Name: KeyValueConverter1
+            Type: ValueMapConverter
+            Children:
+            - Name: Source
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../Selection1_Admin"
+            - Name: Pairs
+              Type: BaseObjectType
+              Children:
+              - Name: Pair
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 0
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ADM-DB-01_INF1"
+              - Name: Pair1
+                Type: ValueMapPair
+                Children:
+                - Name: Key
+                  Type: BaseDataVariableType
+                  DataType: UInt32
+                  Value: 1
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ADM-EDB-01_INF2"
+- Name: Totalconsumptionminimum
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Totalconsumptionmaximum
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Averagepf
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: Averagefrequency
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: JaceSelected
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Selection_1_Jace"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 0
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV SEGR ROOM"
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PUMP ROOM"
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINT SHOP"
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODY SHOP"
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF STATION"
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADMIN"
+- Name: Togle
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- File: KWhConsumptionChart/KWhConsumptionChart.yaml
