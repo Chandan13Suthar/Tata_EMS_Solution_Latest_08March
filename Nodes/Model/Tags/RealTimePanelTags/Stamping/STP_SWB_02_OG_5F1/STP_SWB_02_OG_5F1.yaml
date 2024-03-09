@@ -1,0 +1,287 @@
+Name: STP_SWB_02_OG_5F1
+Type: FolderType
+Children:
+- Name: Active_Power_Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[0]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Apparent_Power_Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[1]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Reactive_Power_Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[2]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Active_Energy_Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[3]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Apparent_Energy_Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[4]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Reactive_Energy_Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[5]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg_PF
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[6]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase_R_Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[7]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase_Y_Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[8]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase_B_Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[9]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg_Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[10]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg_Voltage_LL
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[11]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg_Voltage_LN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[12]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Frequency
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[13]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Voltage_RY
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[14]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Voltage_YB
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[15]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Voltage_BR
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[16]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Voltage_RN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[17]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Voltage_YN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[18]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Voltage_BN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[19]@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 117.0

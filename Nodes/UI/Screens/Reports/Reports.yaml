@@ -8083,7 +8083,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 7.0
+              Value: 11.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -8535,7 +8535,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 19.0
+              Value: 22.0
           - Name: Refresh
             Type: Button
             Children:

@@ -2794,53 +2794,6 @@ Children:
   Value: false
 - File: Testing_Histo/Testing_Histo.yaml
 - File: Demo/Demo.yaml
-- Name: HourlyDataAggregationInstance
-  Type: HourlyDataAggregation
-  Children:
-  - Name: Date
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
-  - Name: Meter
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Jace
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Consumption
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Button
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: true
-- Name: HourlyDataAggregation
-  Id: g=ca1787a7be38bbce65e3a072f3f2dd39
-  Supertype: BaseObjectType
-  Children:
-  - Name: Date
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
-  - Name: Meter
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Jace
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "0"
-  - Name: Consumption
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Button
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: true
 - Name: ObjectInstance
   Type: Object
   Children:
@@ -3026,3 +2979,79 @@ Children:
     DataType: Int32
     Value: 50
 - File: Datalogtag/Datalogtag.yaml
+- Name: HourlyDataAggInstance
+  Type: HourlyDataAgg
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RuntimeNetLogic5
+    Type: NetLogic
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: HourlyDataAgg
+  Id: g=b1a334e5b6bf10afd6633ca1f21e1d91
+  Supertype: BaseObjectType
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RuntimeNetLogic5
+    Type: NetLogic
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: HourlyDataAgg1
+  Type: HourlyDataAgg
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RuntimeNetLogic5
+    Type: NetLogic
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

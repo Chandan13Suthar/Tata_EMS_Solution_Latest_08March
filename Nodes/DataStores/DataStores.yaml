@@ -177,6 +177,286 @@ Children:
     Children:
     - Class: Method
       Name: InsertRandomValues
+- Name: ODBCDatabase
+  Id: g=66c4cc35201cdd85c026d878f8998054
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: MonthlyConsumptionReport
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Date
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Power
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Energy
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Pf
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+    - Name: HomePage
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+    - Name: ConsumptionDistribution
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Date
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Target
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Yearlowest
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Monthlowest
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Pf
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: DailyConsumption
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+    - Name: HistoDashboard
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "sa"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    Value: "Password@01"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":12,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=11;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=59
+    Direction: Forward
+  - Name: DSN
+    Type: PropertyType
+    DataType: String
+    Value: "FT Optix"
 - Name: EmbeddedDatabase1
   Type: SQLiteStore
   Children:

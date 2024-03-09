@@ -828,7 +828,7 @@ Children:
     Type: PropertyType
     DataType: Duration
     Value: "0:01:00:1.0000000"
-- Name: Home Page
+- Name: HomePage
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -838,7 +838,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -847,10 +847,9 @@ Children:
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
-    - Name: Consumption
+    - Name: Jace
       Type: VariableToLog
       DataType: BaseDataType
-      Value: {"Type":10,"Body":0.0}
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -869,7 +868,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Datalogtag/Consumption"
+        Value: "../../../../Model/Datalogtag/Jace"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -903,9 +902,10 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: Jace
+    - Name: Consumption
       Type: VariableToLog
       DataType: BaseDataType
+      Value: {"Type":6,"Body":0}
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -924,7 +924,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Datalogtag/Jace"
+        Value: "../../../../Model/Datalogtag/Consumption"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1212,7 +1212,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/HourlyDataAggregationInstance/Meter"
+        Value: "../../../../Model/HourlyDataAggInstance/Meter"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1228,7 +1228,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:2.0000000"
+    Value: "0:00:00:1.0000000"
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration
