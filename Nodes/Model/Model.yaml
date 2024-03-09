@@ -3084,6 +3084,14 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: Maxconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: HourlyDataAgg
   Id: g=b1a334e5b6bf10afd6633ca1f21e1d91
   Supertype: BaseObjectType
@@ -3190,6 +3198,14 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: Maxconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: HourlyDataAgg1
   Type: HourlyDataAgg
   Children:
@@ -3292,6 +3308,14 @@ Children:
     DataType: Float
     Value: 0.0
   - Name: VoltageBN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Maxconsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Minconsumption
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0

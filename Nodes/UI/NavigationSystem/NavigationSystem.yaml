@@ -5806,7 +5806,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/33KVMeters/Incomer2/Apparent_Power_Total"
+              Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/33KVMeters/Incomer2/Consumption"
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -7229,7 +7229,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 1400.0
+          Value: 1420.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -7253,7 +7253,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 130.0
+          Value: 139.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration
@@ -8157,7 +8157,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 520.0
+          Value: 1360.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -8176,12 +8176,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 230.0
+          Value: 10.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 369.0
+          Value: 360.0
         - Name: AutoRefreshTime
           Type: BaseDataVariableType
           DataType: Duration

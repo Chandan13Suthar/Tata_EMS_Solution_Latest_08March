@@ -62,6 +62,9 @@ public class RuntimeNetLogic5 : BaseNetLogic
         voltagernVariable = owner.VoltageRNVariable;
         voltageynVariable = owner.VoltageYNVariable;
         voltagebnVariable = owner.VoltageBNVariable;
+        maxconsumptionVariable = owner.MaxconsumptionVariable;
+        // minconsumptionVariable = owner.MinconsumptionVariable;
+        minconsumptionVariable = owner.MinconsumptionVariable;
 
         periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
         periodicTask.Start();
@@ -98,6 +101,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
         int voltagern = voltagernVariable.Value;
         int voltageyn = voltageynVariable.Value;
         int voltagebn = voltagebnVariable.Value;
+        int minconsumption = minconsumptionVariable.Value;
+        int maxconsumption = maxconsumptionVariable.Value;
 
 
 
@@ -126,8 +131,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
         var myStore21 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
         var myStore22 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
         var myStore23 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
-
-
+        var myStore24 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+       // var myStore25 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
 
 
 
@@ -192,6 +197,10 @@ public class RuntimeNetLogic5 : BaseNetLogic
         object[,] resultSet23;
         string[] header23;
 
+        object[,] resultSet24;
+        string[] header24;
+
+       
 
 
 
@@ -206,7 +215,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
            
             string query1 = $"DELETE FROM DailyConsumption WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Meter = 'INCOMER2'";
             string query2 = $" SELECT     Meter FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query3 = $" SELECT     MAX(Consumption) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
+            string query3 = $" SELECT     MAX(Consumption)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
             string query4 = $" SELECT     AVG(Active_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
             string query5 = $" SELECT     AVG(Apparent_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
             string query6 = $" SELECT     AVG(Reactive_Power_Total_Power_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
@@ -227,7 +236,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
             string query21 = $" SELECT    AVG(Voltage_RN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
             string query22 = $" SELECT    AVG(Voltage_YN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
             string query23 = $" SELECT    AVG(Voltage_BN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-
+            string query24 = $" SELECT    MIN(Consumption) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
 
 
             myStore1.Query(query1, out header1, out resultSet1);
@@ -253,6 +262,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
             myStore21.Query(query21, out header21, out resultSet21);
             myStore22.Query(query22, out header22, out resultSet22);
             myStore23.Query(query23, out header23, out resultSet23);
+            myStore24.Query(query24, out header24, out resultSet24);
 
 
 
@@ -282,7 +292,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
             if (rowCount3 > 0 && columnCount3 > 0)
             {
                 var column1 = Convert.ToInt32(resultSet3[0, 0]);
-                consumption = column1;
+                maxconsumption = column1;
 
             }
 
@@ -465,6 +475,18 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
             }
 
+            var rowCount24 = resultSet24 != null ? resultSet24.GetLength(0) : 0;
+            var columnCount24 = header24 != null ? header24.Length : 0;
+            if (rowCount24 > 0 && columnCount24 > 0)
+            {
+                var column1 = Convert.ToInt32(resultSet24[0, 0]);
+                minconsumption = column1;
+
+            }
+
+
+
+
 
 
         }
@@ -521,6 +543,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
     private IUAVariable voltagernVariable;
     private IUAVariable voltageynVariable;
     private IUAVariable voltagebnVariable;
+    private IUAVariable maxconsumptionVariable;
+    private IUAVariable minconsumptionVariable;
     private PeriodicTask periodicTask;
 
 }  
