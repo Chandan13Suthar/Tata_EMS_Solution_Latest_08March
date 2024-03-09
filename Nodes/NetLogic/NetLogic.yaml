@@ -35,7 +35,7 @@ Children:
   - Name: Table
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/EmbeddedDatabase/Tables/DataLogger"
+    Value: {"IdType":2,"Id":"253d14c8681620db7c856f8352e586a3","Namespace":34}
     Children:
     - Name: Kind
       Type: PropertyType

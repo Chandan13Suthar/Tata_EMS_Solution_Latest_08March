@@ -3004,6 +3004,86 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: ActivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentPowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ActiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPF
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseRCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseYCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseBCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLL
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRY
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYB
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBR
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: HourlyDataAgg
   Id: g=b1a334e5b6bf10afd6633ca1f21e1d91
   Supertype: BaseObjectType
@@ -3030,6 +3110,86 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: ActivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentPowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ActiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPF
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseRCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseYCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseBCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLL
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRY
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYB
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBR
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
 - Name: HourlyDataAgg1
   Type: HourlyDataAgg
   Children:
@@ -3055,3 +3215,83 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: ActivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentPowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactivePowerTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ActiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ApparentEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ReactiveEnergyTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgPF
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseRCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseYCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: PhaseBCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgCurrent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLL
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: AvgVoltageLN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Frequency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRY
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYB
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBR
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageRN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageYN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: VoltageBN
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
