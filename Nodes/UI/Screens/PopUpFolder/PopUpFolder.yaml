@@ -285,6 +285,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=2c82ea4d1c372ea1268a480895061ce0
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: SPP
   Id: g=7add584dfd45a808b23846af09e36901
   Supertype: Popup1
@@ -595,6 +605,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=9a9153c4e69a9062639fb74b8a7a803f
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: Spare
   Id: g=db976a2a4600348f22fd3a63a2607271
   Supertype: Popup1
@@ -905,6 +925,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=31313d818ae1103195eda00f457a77ef
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: Utility
   Id: g=91ebc6256a9be26d6bb8ebacccbe3084
   Supertype: Popup1
@@ -1189,6 +1219,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=78327e3cb263986dbcb410b52c4d606c
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: Stamping
   Id: g=96c128f3870110abf76e2a81452dae38
   Supertype: Popup1
@@ -1473,6 +1513,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=dbe8bb6fe864c69fb65f9332fefaf295
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: TCF
   Id: g=806edc0264964492ae9de318f05676ec
   Supertype: Popup1
@@ -1757,6 +1807,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=8b2973b370efe3ea591e3bc67e7d3665
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: BodyShop
   Id: g=cffe9d1b5d700506be951d53143f0549
   Supertype: Popup1
@@ -2041,6 +2101,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=fb22b4095176ebe3e6ce0105743b37bf
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: EngineShop
   Id: g=b6f459745bc37f22e548753d40bad2a2
   Supertype: Popup1
@@ -2325,6 +2395,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=73e1f8c28cd0616212f48d4b24a59d82
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: PaintShop
   Id: g=67a8b49e94e66d937e34aa649884e33a
   Supertype: Popup1
@@ -2609,6 +2689,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=09ebbc8b57c1ebebe796e5c394f00ae0
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: SPP2
   Id: g=0beba4d297436eecf3e9e9f48a75f807
   Supertype: Popup1
@@ -2893,6 +2983,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=39e2305111f67bc83875344165d83a07
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: Spare2
   Id: g=2bd910cd7ff9509943f413457c6a5e56
   Supertype: Popup1
@@ -3203,6 +3303,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=f3ad36d99fa2c3a3243605612e461f07
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: Utility2
   Id: g=5586fe00ab572e356031f99148d75ebb
   Supertype: Popup1
@@ -3487,6 +3597,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=56ac235f914a683abe1a99a6867d6474
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: Stamping2
   Id: g=452465abe891078165e4b7dfec11f915
   Supertype: Popup1
@@ -3707,12 +3827,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 425.0
+          Value: 298.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 125.0
+          Value: 115.0
       - Name: Button3
         Type: Button
         Children:
@@ -3781,6 +3901,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=bfb303f1697f4255f2fb53349f34eb88
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: TCF2
   Id: g=a2b28071240adad9728597970592745f
   Supertype: Popup1
@@ -4065,6 +4195,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=0ed60701618b143218a59e6bcc67a412
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: BodyShop2
   Id: g=ab89769a07a4d07f9346554d08099265
   Supertype: Popup1
@@ -4349,6 +4489,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=97aa3481d75393a281031e7e448b9da2
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: EngineShop2
   Id: g=0faf473968e0940d54c56fd497100223
   Supertype: Popup1
@@ -4633,6 +4783,16 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=a12fe8a46f684ec2185b6367186b2b64
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
 - Name: PaintShop2
   Id: g=ac8db2b7f515e203c9b0d1cbbd0b5d95
   Supertype: Popup1
@@ -4917,3 +5077,13 @@ Children:
               Type: PropertyType
               DataType: UInt16
               Value: 0
+  - Name: MoveTarget
+    Id: g=26735b373274138cd1809c41b4ff0562
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@NodeId"
