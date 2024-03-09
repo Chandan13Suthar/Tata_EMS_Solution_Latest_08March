@@ -1,0 +1,5 @@
+Name: Admin
+Type: FolderType
+Children:
+- File: 'ADM-DB-01_INF1/ADM-DB-01_INF1.yaml'
+- File: 'ADM-EDB-01_INF2/ADM-EDB-01_INF2.yaml'

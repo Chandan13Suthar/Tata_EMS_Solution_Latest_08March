@@ -156,7 +156,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/EmbeddedDatabase"
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -828,7 +828,7 @@ Children:
     Type: PropertyType
     DataType: Duration
     Value: "0:01:00:1.0000000"
-- Name: Home Page
+- Name: HomePage
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -1212,7 +1212,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/HourlyDataAggregationInstance/Meter"
+        Value: "../../../../Model/HourlyDataAggInstance/Meter"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -1228,7 +1228,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:2.0000000"
+    Value: "0:00:00:1.0000000"
   - Name: PollingPeriod
     Type: PropertyType
     DataType: Duration
