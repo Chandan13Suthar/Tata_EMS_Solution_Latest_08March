@@ -260,7 +260,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/33kv Switchgear/Incomer_1"
+                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/EB_Incomer_1/Individual_Panel_Layout14"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
@@ -373,7 +373,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/33kv Switchgear/Incomer_1"
+                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/DG_Incomer_2/Individual_Panel_Layout15"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
@@ -459,39 +459,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/33kv Switchgear/Incomer_1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/SPP"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -572,39 +580,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Spare"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -685,39 +701,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Utility/Individual_Panel_Layout4"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Utility"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -798,39 +822,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Stamping"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -911,39 +943,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/TCF"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -1024,39 +1064,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/BodyShop"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -1137,39 +1185,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/EngineShop"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -1250,39 +1306,47 @@ Children:
               - Name: ns=3;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/Commands/UICommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{PanelLoader}@NodeId"
-                  Children:
-                  - Name: Mode
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=3;Method
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "ChangePanel"
+                Value: "OpenDialog"
               - Name: InputArguments
                 Type: BaseObjectType
                 Children:
-                - Name: NewPanel
+                - Name: Dialog
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/PaintShop"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
-                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                   ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: ParentItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -1390,7 +1454,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: NodeId
                   Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/Screen1"
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/33kv Switchgear/Incomer_1"
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId

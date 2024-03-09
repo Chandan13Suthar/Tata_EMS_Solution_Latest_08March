@@ -5718,7 +5718,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+          Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5770,41 +5770,6 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/Timestamp"
-          - Name: Meter
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Meter"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-              Value: 0
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              Value: 0
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Meter"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Meter"
           - Name: Consumption
             Type: DataGridColumn
             Children:
@@ -5840,6 +5805,41 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/Consumption"
+          - Name: Meter
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Meter"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+              Value: 0
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              Value: 0
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Meter"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Meter"
           - Name: Jace
             Type: DataGridColumn
             Children:
@@ -6681,7 +6681,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+          Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
           Children:
           - Name: ItemKind
             Type: PropertyType

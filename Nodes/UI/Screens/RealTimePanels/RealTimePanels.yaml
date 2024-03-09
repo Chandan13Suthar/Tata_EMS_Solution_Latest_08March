@@ -426,83 +426,6 @@ Children:
               - Name: Button2
                 Type: Button
                 Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: NewPanel
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/SPP Shop/SPP_Panel_1"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -543,9 +466,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button3
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -562,31 +482,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Spare/Spare_1"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/SPP"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -623,6 +555,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button3
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -668,9 +603,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button4
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -687,31 +619,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Utility/Individual_Panel_Layout4"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Spare"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -748,6 +692,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button4
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -763,9 +710,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button5
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -782,306 +726,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Stamping/Individual_Panel_Layout5"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Utility"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 459.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 290.0
-              - Name: Button6
-                Type: Button
-                Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: NewPanel
+                        - Name: ParentItem
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/TCF Station/Individual_Panel_Layout9"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 592.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 291.0
-              - Name: Button7
-                Type: Button
-                Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: DialogNodeId
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Body Shop/Individual_Panel_Layout10"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button8
-                Type: Button
-                Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: NewPanel
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Engine Shop/Engine_Shop_1"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -1148,14 +829,24 @@ Children:
                       ReferenceType: HasParameter
                       ModellingRule: Optional
                       Value: true
+              - Name: Button5
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button9
-                Type: Button
-                Children:
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 459.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 290.0
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -1172,31 +863,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/PaintShop/Individual_Panel_Layout6"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Stamping"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -1233,14 +936,597 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+              - Name: Button6
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 592.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 291.0
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/TCF"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+              - Name: Button7
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/BodyShop"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+              - Name: Button8
+                Type: Button
+                Children:
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/EngineShop"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+              - Name: Button9
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/PaintShop"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
               - Name: Button1
                 Type: Button
                 Children:
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 439.0
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -1318,46 +1604,6 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
-                - Name: Visible
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                  Children:
-                  - Name: ConditionalConverter1
-                    Type: ConditionalConverter
-                    Children:
-                    - Name: Condition
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasSource
-                      Value: false
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../Switch1/Checked"
-                    - Name: TrueValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: false
-                    - Name: FalseValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: true
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 439.0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
               - Name: Image1
                 Type: Image
                 Children:
@@ -1943,6 +2189,71 @@ Children:
               - Name: Button10
                 Type: Button
                 Children:
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 439.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: ImagePosition
+                  Type: BaseDataVariableType
+                  DataType: Position
+                  ModellingRule: Optional
+                  Value: 4
+                - Name: TextPosition
+                  Type: BaseDataVariableType
+                  DataType: Position
+                  ModellingRule: Optional
+                  Value: 7
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -2020,151 +2331,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
-                - Name: Visible
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                  Children:
-                  - Name: ConditionalConverter1
-                    Type: ConditionalConverter
-                    Children:
-                    - Name: Condition
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasSource
-                      Value: false
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../Switch1/Checked"
-                    - Name: TrueValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: true
-                    - Name: FalseValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: false
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 439.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 80.0
-                - Name: Width
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 60.0
-                - Name: Height
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 60.0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
-                - Name: ImagePosition
-                  Type: BaseDataVariableType
-                  DataType: Position
-                  ModellingRule: Optional
-                  Value: 4
-                - Name: TextPosition
-                  Type: BaseDataVariableType
-                  DataType: Position
-                  ModellingRule: Optional
-                  Value: 7
               - Name: Button11
                 Type: Button
                 Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ns=3;ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: ns=3;Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: NewPanel
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/SPP Shop/SPP_Panel_2"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -2220,9 +2389,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button12
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -2239,31 +2405,47 @@ Children:
                       - Name: ns=3;ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: ns=3;Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Spare/Spare_2"
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/SPP2"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -2300,6 +2482,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button12
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -2355,9 +2540,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button13
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -2374,31 +2556,47 @@ Children:
                       - Name: ns=3;ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: ns=3;Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Engine Shop/Engine_Shop_2"
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogDescription"}
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Spare2"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -2435,6 +2633,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button13
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -2469,7 +2670,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 871.0
+                  Value: 870.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2490,6 +2691,95 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/EngineShop2"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
               - Name: Label11
                 Type: Label
                 Children:
@@ -4166,6 +4456,741 @@ Children:
                   DataType: Color
                   ModellingRule: Optional
                   Value: "#ffffff"
+              - Name: Button14
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 330.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 290.0
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Utility2"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+              - Name: Button15
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 460.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 290.0
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Stamping2"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+              - Name: Button16
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 590.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 290.0
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/TCF2"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+              - Name: Button17
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/BodyShop2"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 730.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 290.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+              - Name: Button18
+                Type: Button
+                Children:
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/PaintShop2"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 1020.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 290.0
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 60.0
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
             - Name: StationWise Details
               Type: Rectangle
               Children:
@@ -7369,83 +8394,6 @@ Children:
               - Name: Button2
                 Type: Button
                 Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: NewPanel
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/SPP Shop/SPP_Panel_1"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -7486,9 +8434,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button3
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -7505,31 +8450,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Spare/Spare_1"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/SPP"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -7566,6 +8523,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button3
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -7611,9 +8571,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button4
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -7630,31 +8587,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Utility/Individual_Panel_Layout4"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Spare"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -7691,6 +8660,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button4
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -7706,9 +8678,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button5
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -7725,31 +8694,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Stamping/Individual_Panel_Layout5"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Utility"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -7786,6 +8767,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button5
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -7801,9 +8785,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button6
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -7820,31 +8801,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/TCF Station/Individual_Panel_Layout9"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Stamping"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -7881,6 +8874,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button6
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -7896,9 +8892,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 291.0
-              - Name: Button7
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -7915,31 +8908,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Body Shop/Individual_Panel_Layout10"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/TCF"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -7976,14 +8981,14 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button7
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button8
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -8000,31 +9005,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Engine Shop/Engine_Shop_1"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/BodyShop"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -8061,6 +9078,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button8
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -8096,9 +9116,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button9
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -8115,31 +9132,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/PaintShop/Individual_Panel_Layout6"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/EngineShop"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -8176,14 +9205,146 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button9
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/PaintShop"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
               - Name: Button1
                 Type: Button
                 Children:
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 439.0
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -8261,46 +9422,6 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
-                - Name: Visible
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                  Children:
-                  - Name: ConditionalConverter1
-                    Type: ConditionalConverter
-                    Children:
-                    - Name: Condition
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasSource
-                      Value: false
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../Switch1/Checked"
-                    - Name: TrueValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: false
-                    - Name: FalseValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: true
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 439.0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
               - Name: Image1
                 Type: Image
                 Children:
@@ -12784,83 +13905,6 @@ Children:
               - Name: Button2
                 Type: Button
                 Children:
-                - Name: MouseClickEventHandler1
-                  Type: EventHandler
-                  Children:
-                  - Name: ListenEventType
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                  - Name: MethodsToCall
-                    Type: BaseObjectType
-                    Children:
-                    - Name: MethodContainer1
-                      Type: BaseObjectType
-                      Children:
-                      - Name: ObjectPointer
-                        Type: NodePointer
-                        DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
-                        Children:
-                        - Name: Kind
-                          Type: PropertyType
-                          DataType: NodeId
-                          Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
-                      - Name: Method
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "ChangePanel"
-                      - Name: InputArguments
-                        Type: BaseObjectType
-                        Children:
-                        - Name: NewPanel
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/SPP Shop/SPP_Panel_1"
-                        - Name: AliasNode
-                          Type: BaseDataVariableType
-                          DataType: NodeId
-                          ValueRank: ScalarOrOneDimension
-                          Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: EventArguments
-                    Type: MouseClickEvent
-                    Children:
-                    - Name: EventId
-                      Type: PropertyType
-                      DataType: ByteString
-                      Value: ""
-                    - Name: EventType
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceNode
-                      Type: PropertyType
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                    - Name: SourceName
-                      Type: PropertyType
-                      DataType: String
-                      Value: ""
-                    - Name: Time
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: ReceiveTime
-                      Type: PropertyType
-                      DataType: UtcTime
-                      Value: "1601-01-01T00:00:00.0000000"
-                    - Name: Message
-                      Type: PropertyType
-                      DataType: LocalizedText
-                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                    - Name: Severity
-                      Type: PropertyType
-                      DataType: UInt16
-                      Value: 0
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -12901,9 +13945,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button3
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -12920,31 +13961,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Spare/Spare_1"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/SPP"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -12981,6 +14034,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button3
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -13026,9 +14082,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button4
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13045,31 +14098,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Utility/Individual_Panel_Layout4"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Spare"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -13106,6 +14171,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button4
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -13121,9 +14189,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button5
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13140,31 +14205,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Stamping/Individual_Panel_Layout5"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Utility"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -13201,6 +14278,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button5
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -13216,9 +14296,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 290.0
-              - Name: Button6
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13235,31 +14312,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/TCF Station/Individual_Panel_Layout9"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/Stamping"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -13296,6 +14385,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button6
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
@@ -13311,9 +14403,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 291.0
-              - Name: Button7
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13330,31 +14419,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/Body Shop/Individual_Panel_Layout10"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/TCF"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -13391,14 +14492,14 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button7
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button8
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13415,31 +14516,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/JACE_Selected_Panel/Engine Shop/Engine_Shop_1"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/BodyShop"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -13476,6 +14589,9 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button8
+                Type: Button
+                Children:
                 - Name: Visible
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -13511,9 +14627,6 @@ Children:
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
-              - Name: Button9
-                Type: Button
-                Children:
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13530,31 +14643,43 @@ Children:
                       - Name: ObjectPointer
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        Value: "/Objects/Commands/UICommands"
                         Children:
                         - Name: Kind
                           Type: PropertyType
                           DataType: NodeId
                           Value: "/Types/ObjectTypes/BaseObjectType"
-                        - Name: DynamicLink
-                          Type: DynamicLink
-                          DataType: NodePath
-                          Value: "{PanelLoader}@NodeId"
                       - Name: Method
                         Type: BaseDataVariableType
                         DataType: String
-                        Value: "ChangePanel"
+                        Value: "OpenDialog"
                       - Name: InputArguments
                         Type: BaseObjectType
                         Children:
-                        - Name: NewPanel
+                        - Name: Dialog
                           Type: BaseDataVariableType
                           DataType: NodeId
-                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Templates/Real Time Panels/PaintShop/Individual_Panel_Layout6"
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/EngineShop"
                         - Name: AliasNode
                           Type: BaseDataVariableType
                           DataType: NodeId
                           ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
                           Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: EventArguments
                     Type: MouseClickEvent
@@ -13591,14 +14716,146 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
+              - Name: Button9
+                Type: Button
+                Children:
                 - Name: ImagePath
                   Type: BaseDataVariableType
                   DataType: ResourceUri
                   ModellingRule: Optional
                   Value: "ns=34;%PROJECTDIR%/MFM.png"
+                - Name: MouseClickEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/UICommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "OpenDialog"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: Dialog
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: "/Objects/Tata_EMS_Solution_Latest_08March/UI/Screens/PopUpFolder/PaintShop"
+                        - Name: AliasNode
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          ValueRank: ScalarOrOneDimension
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                        - Name: ParentItem
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "../../../../..@NodeId"
+                      - Name: OutputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: DialogNodeId
+                          Type: BaseDataVariableType
+                          DataType: NodeId
+                          Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: EventArguments
+                    Type: MouseClickEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                      Value: ""
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                      Value: ""
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                      Value: "1601-01-01T00:00:00.0000000"
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                      Value: 0
               - Name: Button1
                 Type: Button
                 Children:
+                - Name: Visible
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Value: false
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../Switch1/Checked"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: false
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 439.0
+                - Name: ImagePath
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  ModellingRule: Optional
+                  Value: "ns=34;%PROJECTDIR%/MFM.png"
                 - Name: MouseClickEventHandler1
                   Type: EventHandler
                   Children:
@@ -13676,46 +14933,6 @@ Children:
                       Type: PropertyType
                       DataType: UInt16
                       Value: 0
-                - Name: Visible
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                  Children:
-                  - Name: ConditionalConverter1
-                    Type: ConditionalConverter
-                    Children:
-                    - Name: Condition
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasSource
-                      Value: false
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../Switch1/Checked"
-                    - Name: TrueValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: false
-                    - Name: FalseValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: true
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 439.0
-                - Name: ImagePath
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  ModellingRule: Optional
-                  Value: "ns=34;%PROJECTDIR%/MFM.png"
               - Name: Image1
                 Type: Image
                 Children:

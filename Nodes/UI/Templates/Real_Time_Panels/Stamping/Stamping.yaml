@@ -1,7 +1,7 @@
 Name: Stamping
 Type: FolderType
 Children:
-- Name: Individual_Panel_Layout5
+- Name: Stamping_Station
   Id: g=d660cfa937f2b0afae9e6760ce62aca8
   Supertype: BaseScreen
   ReferenceType: HasComponent
