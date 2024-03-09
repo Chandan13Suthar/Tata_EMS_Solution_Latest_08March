@@ -156,7 +156,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/EmbeddedDatabase"
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -298,8 +298,8 @@ Children:
           Value: 2
     - Name: SourceName
       Type: EventFieldToLog
-      DataType: String
-      Value: ""
+      DataType: BaseDataType
+      Value: {"Type":12,"Body":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -312,8 +312,8 @@ Children:
           Value: 2
     - Name: Message
       Type: EventFieldToLog
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      DataType: BaseDataType
+      Value: {"Type":21,"Body":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -326,8 +326,8 @@ Children:
           Value: 2
     - Name: EnabledState_Id
       Type: EventFieldToLog
-      DataType: Boolean
-      Value: false
+      DataType: BaseDataType
+      Value: {"Type":1,"Body":false}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -340,8 +340,8 @@ Children:
           Value: 2
     - Name: ActiveState_Id
       Type: EventFieldToLog
-      DataType: Boolean
-      Value: false
+      DataType: BaseDataType
+      Value: {"Type":1,"Body":false}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -354,8 +354,8 @@ Children:
           Value: 2
     - Name: AckedState_Id
       Type: EventFieldToLog
-      DataType: Boolean
-      Value: false
+      DataType: BaseDataType
+      Value: {"Type":1,"Body":false}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -368,8 +368,8 @@ Children:
           Value: 2
     - Name: ConfirmedState_Id
       Type: EventFieldToLog
-      DataType: Boolean
-      Value: false
+      DataType: BaseDataType
+      Value: {"Type":1,"Body":false}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -382,8 +382,8 @@ Children:
           Value: 2
     - Name: ConditionName
       Type: EventFieldToLog
-      DataType: String
-      Value: ""
+      DataType: BaseDataType
+      Value: {"Type":12,"Body":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -396,8 +396,8 @@ Children:
           Value: 2
     - Name: Severity
       Type: EventFieldToLog
-      DataType: UInt16
-      Value: 0
+      DataType: BaseDataType
+      Value: {"Type":5,"Body":0}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -410,8 +410,8 @@ Children:
           Value: 2
     - Name: LocalTime
       Type: EventFieldToLog
-      DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
+      DataType: BaseDataType
+      Value: {"Type":13,"Body":"1601-01-01T00:00:00.0000000"}
       Children:
       - Name: ExpressionEvaluator1
         Type: ExpressionEvaluator
@@ -441,9 +441,9 @@ Children:
             Value: "../../../../EventArguments/LocalTime"
     - Name: Jace
       Type: EventFieldToLog
-      DataType: String
+      DataType: BaseDataType
       ValueRank: Any
-      Value: ""
+      Value: {"Type":12,"Body":""}
       Children:
       - Name: KeyValueConverter1
         Type: ValueMapConverter
@@ -690,7 +690,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -699,64 +699,7 @@ Children:
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
-    - Name: Date
-      Type: VariableToLog
-      DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-    - Name: Jace
-      Type: VariableToLog
-      DataType: BaseDataType
-      Value: {"Type":12,"Body":""}
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-    - Name: Meter
-      Type: VariableToLog
-      DataType: BaseDataType
-      Value: {"Type":12,"Body":""}
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-    - Name: Power
+    - Name: Pf
       Type: VariableToLog
       DataType: BaseDataType
       Value: {"Type":6,"Body":0}
@@ -794,10 +737,67 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Pf
+    - Name: Power
       Type: VariableToLog
       DataType: BaseDataType
       Value: {"Type":6,"Body":0}
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Meter
+      Type: VariableToLog
+      DataType: BaseDataType
+      Value: {"Type":12,"Body":""}
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Jace
+      Type: VariableToLog
+      DataType: BaseDataType
+      Value: {"Type":12,"Body":""}
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Date
+      Type: VariableToLog
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -838,7 +838,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -847,9 +847,10 @@ Children:
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
-    - Name: Jace
+    - Name: Consumption
       Type: VariableToLog
       DataType: BaseDataType
+      Value: {"Type":10,"Body":0.0}
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -868,7 +869,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Datalogtag/Jace"
+        Value: "../../../../Model/Datalogtag/Consumption"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -902,10 +903,9 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: Consumption
+    - Name: Jace
       Type: VariableToLog
       DataType: BaseDataType
-      Value: {"Type":6,"Body":0}
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -924,7 +924,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Datalogtag/Consumption"
+        Value: "../../../../Model/Datalogtag/Jace"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -951,7 +951,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -960,29 +960,10 @@ Children:
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
-    - Name: Date
-      Type: VariableToLog
-      DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-    - Name: Jace
+    - Name: Pf
       Type: VariableToLog
       DataType: BaseDataType
-      Value: {"Type":12,"Body":""}
+      Value: {"Type":6,"Body":0}
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -998,26 +979,7 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Meter
-      Type: VariableToLog
-      DataType: BaseDataType
-      Value: {"Type":12,"Body":""}
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-    - Name: Target
+    - Name: Frequency
       Type: VariableToLog
       DataType: BaseDataType
       Value: {"Type":10,"Body":0.0}
@@ -1036,7 +998,7 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Yearlowest
+    - Name: Consumption
       Type: VariableToLog
       DataType: BaseDataType
       Value: {"Type":10,"Body":0.0}
@@ -1074,7 +1036,7 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Consumption
+    - Name: Yearlowest
       Type: VariableToLog
       DataType: BaseDataType
       Value: {"Type":10,"Body":0.0}
@@ -1093,7 +1055,7 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Frequency
+    - Name: Target
       Type: VariableToLog
       DataType: BaseDataType
       Value: {"Type":10,"Body":0.0}
@@ -1112,10 +1074,48 @@ Children:
         DataType: StatusCode
         AccessLevel: Read
         Value: 0
-    - Name: Pf
+    - Name: Meter
       Type: VariableToLog
       DataType: BaseDataType
-      Value: {"Type":6,"Body":0}
+      Value: {"Type":12,"Body":""}
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Jace
+      Type: VariableToLog
+      DataType: BaseDataType
+      Value: {"Type":12,"Body":""}
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Date
+      Type: VariableToLog
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
       Children:
       - Name: LastValue
         Type: PropertyType
@@ -1156,7 +1156,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1181,7 +1181,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType

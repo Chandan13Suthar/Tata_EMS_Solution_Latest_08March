@@ -1,7 +1,7 @@
 Name: Body Shop
 Type: FolderType
 Children:
-- Name: Individual_Panel_Layout10
+- Name: BodyShop_Station
   Id: g=8fd7a278fe0ef89c18a4ac3d873490cf
   Supertype: BaseScreen
   ReferenceType: HasComponent

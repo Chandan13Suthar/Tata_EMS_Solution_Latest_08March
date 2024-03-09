@@ -1,7 +1,7 @@
 Name: PaintShop
 Type: FolderType
 Children:
-- Name: Individual_Panel_Layout6
+- Name: Paint_Shop_Station
   Id: g=46c3d101c89fd770679a3b7cdf7dd29c
   Supertype: BaseScreen
   ReferenceType: HasComponent
