@@ -268,6 +268,86 @@ Children:
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
+        - Name: Active_Power_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Apparent_Power_Total_Power_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Reactive_Power_Total_Power_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Active_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Apparent_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Reactive_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_Pf
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_Voltage_LL
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_Voltage_LN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_RY
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_YB
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_BR
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
     - Name: ConsumptionDistribution
       Type: ODBCStoreTable
       Children:
