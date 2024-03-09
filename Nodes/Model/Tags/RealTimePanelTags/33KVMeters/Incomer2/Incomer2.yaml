@@ -9,7 +9,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[0]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[0]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -23,7 +23,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[1]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[1]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -37,7 +37,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[2]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[2]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -51,7 +51,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[3]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[3]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -65,7 +65,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[4]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[4]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -79,7 +79,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[5]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[5]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -93,7 +93,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[6]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[6]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -107,7 +107,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[7]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[7]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -121,7 +121,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[8]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[8]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -135,7 +135,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[9]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[9]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -149,7 +149,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[10]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[10]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -163,7 +163,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[11]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[11]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -177,7 +177,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[12]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[12]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -191,7 +191,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[13]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[13]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -205,7 +205,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[14]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[14]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -219,7 +219,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[15]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[15]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -233,7 +233,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[16]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[16]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -247,7 +247,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[17]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[17]@Value"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -261,7 +261,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[18]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[18]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -275,7 +275,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[19]@Value"
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/demo_tag[19]"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -284,4 +284,14 @@ Children:
 - Name: Consumption
   Type: BaseDataVariableType
   DataType: Float
-  Value: 20.0
+  Value: 1235.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../../CommDrivers/MicroControllerDriver1/MicroControllerStation1/Tags/Consumption"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

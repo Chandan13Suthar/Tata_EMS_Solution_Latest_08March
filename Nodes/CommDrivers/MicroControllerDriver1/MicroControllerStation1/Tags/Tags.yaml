@@ -1,6 +1,15 @@
 Name: Tags
 Type: FolderType
 Children:
+- Name: Consumption
+  Type: MicroControllerTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Consumption"
 - Name: demo_tag
   Type: MicroControllerTag
   DataType: Float
