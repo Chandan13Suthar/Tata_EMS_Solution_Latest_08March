@@ -633,6 +633,32 @@ Children:
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
+    - Name: Home Page
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
     - Name: DailyConsumption
       Type: ODBCStoreTable
       Children:
@@ -663,32 +689,90 @@ Children:
           Type: StoreColumn
           DataType: String
           Value: ""
-    - Name: Home Page
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=11;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
+        - Name: Consumption
           Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
+          DataType: Float
+          Value: 0.0
+        - Name: Active_Power_Total
           Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
+          DataType: Float
+          Value: 0.0
+        - Name: Apparent_Power_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Reactive_Power_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Active_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Apparent_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Reactive_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_PF
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Avg_Current
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_LL
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_LN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_RY
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_YB
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_BR
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
   - Name: Type
     Type: PropertyType
     DataType: DBMSType
