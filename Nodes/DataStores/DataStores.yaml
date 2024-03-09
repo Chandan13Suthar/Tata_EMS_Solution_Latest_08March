@@ -8,45 +8,6 @@ Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
-    - Name: DataLogger
-      Id: g=253d14c8681620db7c856f8352e586a3
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=11;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: dataloggerVariable1
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: dataloggerVariable2
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: dataloggerVariable3
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
     - Name: RecipeSchema1
       Type: SQLiteStoreTable
       Children:

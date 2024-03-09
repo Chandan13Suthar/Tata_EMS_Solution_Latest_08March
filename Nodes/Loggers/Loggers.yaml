@@ -11,7 +11,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/EmbeddedDatabase"
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Type: PropertyType
