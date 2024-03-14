@@ -1196,16 +1196,10 @@ Children:
             DataType: Float
             Value: 0.0
             Children:
-            - Name: StringFormatter1
+            - Name: StringFormatter2
               Type: StringFormatter
               Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"{0}"}
-              - Name: ns=3;Source0
+              - Name: Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
                 ReferenceType: HasSource
@@ -1213,7 +1207,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/Paintshop1/Phase_R_Current"
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1250,16 +1244,10 @@ Children:
             DataType: Float
             Value: 0.0
             Children:
-            - Name: StringFormatter1
+            - Name: StringFormatter2
               Type: StringFormatter
               Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"{0}"}
-              - Name: ns=3;Source0
+              - Name: Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
                 ReferenceType: HasSource
@@ -1267,7 +1255,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/Paintshop1/Phase_B_Current"
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1304,16 +1292,10 @@ Children:
             DataType: Float
             Value: 0.0
             Children:
-            - Name: StringFormatter1
+            - Name: StringFormatter2
               Type: StringFormatter
               Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"{0}"}
-              - Name: ns=3;Source0
+              - Name: Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
                 ReferenceType: HasSource
@@ -1321,7 +1303,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/Paintshop1/Avg_Current"
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1358,16 +1340,10 @@ Children:
             DataType: Float
             Value: 0.0
             Children:
-            - Name: StringFormatter1
+            - Name: StringFormatter2
               Type: StringFormatter
               Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"{0}"}
-              - Name: ns=3;Source0
+              - Name: Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
                 ReferenceType: HasSource
@@ -1375,7 +1351,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/Paintshop1/Phase_Y_Current"
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1420,10 +1396,18 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../CircularGauge1/Value"
         - Name: Label6
           Type: Label
           Children:
@@ -1440,10 +1424,26 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../CircularGauge2/Value"
         - Name: Label8
           Type: Label
           Children:
@@ -1460,10 +1460,26 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../CircularGauge4/Value"
         - Name: Label7
           Type: Label
           Children:
@@ -1480,10 +1496,26 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../CircularGauge3/Value"
       - Name: Image2
         Type: Image
         Children:
@@ -2226,10 +2258,18 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../CircularGauge1/Value"
         - Name: CircularGauge1
           Type: CircularGauge
           Children:
@@ -2237,6 +2277,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -2390,16 +2443,10 @@ Children:
             DataType: Float
             Value: 0.0
             Children:
-            - Name: StringFormatter1
+            - Name: StringFormatter2
               Type: StringFormatter
               Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"{0}"}
-              - Name: ns=3;Source0
+              - Name: Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
                 ReferenceType: HasSource
@@ -2407,7 +2454,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/AllthreePanels/All Panels/Paintshop1/Avg_PF"
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -2482,10 +2529,18 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../CircularGauge1/Value"
           - Name: Visible
             Type: BaseDataVariableType
             DataType: Boolean
