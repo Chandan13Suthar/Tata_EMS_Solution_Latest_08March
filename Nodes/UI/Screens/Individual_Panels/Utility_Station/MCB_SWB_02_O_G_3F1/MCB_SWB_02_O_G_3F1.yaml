@@ -78,6 +78,8 @@ Children:
       - Name: Rectangle3
         Type: Rectangle
         Children:
+        - Name: Button1
+          Type: Button
         - Name: Label2
           Type: Label
         - Name: Label1
