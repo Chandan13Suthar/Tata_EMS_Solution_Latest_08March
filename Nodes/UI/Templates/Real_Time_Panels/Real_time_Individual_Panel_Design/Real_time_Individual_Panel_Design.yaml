@@ -1092,7 +1092,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: -550.0
+          Value: 500.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -1127,7 +1127,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 3
+          Value: 0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
@@ -1145,7 +1145,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 550.0
+          Value: 920.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -1180,7 +1180,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 3
+          Value: 0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size

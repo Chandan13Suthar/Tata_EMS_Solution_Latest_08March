@@ -1,6 +1,8 @@
 Name: UtilityMeters
 Type: FolderType
 Children:
+- File: MCB_MVS_01_IN1/MCB_MVS_01_IN1.yaml
+- File: MCB_MVS_01_IN2/MCB_MVS_01_IN2.yaml
 - File: MCB_MVS_01_O_G_F4/MCB_MVS_01_O_G_F4.yaml
 - File: MCB_MVS_01_O_G_F5/MCB_MVS_01_O_G_F5.yaml
 - File: MCB_MVS_01_O_G_F6/MCB_MVS_01_O_G_F6.yaml

@@ -112,8 +112,8 @@ public class RuntimeNetLogic6 : BaseNetLogic
 
         if (button == true)
         {
-            if (counter <= 199)
-            {
+            if (counter <= 210)
+                            {
                 
                 counter = counter + 1;
             }
