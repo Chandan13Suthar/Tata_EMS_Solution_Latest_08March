@@ -78,6 +78,8 @@ Children:
       - Name: Rectangle3
         Type: Rectangle
         Children:
+        - Name: Button1
+          Type: Button
         - Name: Label2
           Type: Label
         - Name: Label1
@@ -99,7 +101,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Active_Power_Total"
       - Name: Rectangle4
         Type: Rectangle
         Children:
@@ -124,7 +126,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Apparent_Power_Total"
       - Name: Rectangle5
         Type: Rectangle
         Children:
@@ -149,7 +151,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Reactive_Power_Total"
       - Name: PolyLine1
         Type: PolyLine
       - Name: PolyLine2
@@ -1207,7 +1209,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Phase_R_Current"
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1255,7 +1257,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Phase_B_Current"
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1303,7 +1305,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Avg_Current"
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1351,7 +1353,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Phase_Y_Current"
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1996,7 +1998,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Voltage_RY"
       - Name: Rectangle1
         Type: Rectangle
         Children:
@@ -2019,7 +2021,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Voltage_YB"
         - Name: Label1
           Type: Label
       - Name: Rectangle2
@@ -2044,7 +2046,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Voltage_BR"
         - Name: Label1
           Type: Label
       - Name: Rectangle3
@@ -2069,7 +2071,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Avg_Voltage_LL"
         - Name: Label1
           Type: Label
       - Name: Rectangle4
@@ -2094,7 +2096,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Voltage_RN"
         - Name: Label1
           Type: Label
       - Name: Rectangle11
@@ -2119,7 +2121,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Voltage_YN"
         - Name: Label1
           Type: Label
       - Name: Rectangle12
@@ -2144,7 +2146,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Voltage_BN"
         - Name: Label1
           Type: Label
       - Name: Rectangle13
@@ -2169,7 +2171,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Avg_Voltage_LN"
         - Name: Label1
           Type: Label
       - Name: Image1
@@ -2190,6 +2192,11 @@ Children:
           Value: "ns=34;%PROJECTDIR%/imgs/Untitled1.png"
         - Name: Label2
           Type: Label
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 210.0
       - Name: Rectangle9
         Type: Rectangle
 - Name: Energy___PF16
@@ -2279,7 +2286,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Frequency"
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -2367,7 +2374,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: ""
+                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Active_Energy_Total"
         - Name: Rectangle1
           Type: Rectangle
           Children:
@@ -2392,7 +2399,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: ""
+                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Apparent_Energy_Total"
         - Name: Rectangle2
           Type: Rectangle
           Children:
@@ -2417,7 +2424,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: ""
+                    Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Reactive_Energy_Total"
       - Name: Image2
         Type: Image
         Children:
@@ -2444,7 +2451,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/UtilityMeters/MCB_MVS_02_O_G_F3/Avg_PF"
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float

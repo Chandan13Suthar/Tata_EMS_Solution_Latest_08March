@@ -582,6 +582,39 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#01042c"
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Button1"}
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 390.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 95.0
+          - Name: Opacity
+            Type: BaseVariableType
+            DataType: Float
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "ButtonStyle1"
+          - Name: BackgroundColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#01042c"
         - Name: Label2
           Type: Label
           Children:

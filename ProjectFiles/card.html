@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Card</title>
+    <style>
+        .value-card {
+            width: 200px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #01042c; /* Initial background color */
+            transition: all 0.3s ease; /* Adding transition for smooth effect */
+        }
+
+            .value-card:hover {
+                background-color: #0c1444; /* Change to a lighter shade on hover */
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Increase shadow on hover */
+            }
+
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Text color */
+        }
+
+        .description {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #ccc; /* Description text color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="value-card">
+        <div class="value">42</div>
+        <div class="description">Answer to the Ultimate Question of Life, the Universe, and Everything</div>
+    </div>
+
+</body>
+</html>

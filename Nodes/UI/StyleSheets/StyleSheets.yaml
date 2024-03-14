@@ -598,6 +598,17 @@ Children:
         Value: 0.0
     - Name: NewButton
       Type: ButtonStyle
+    - Name: ButtonStyle1
+      Type: ButtonStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#fb8038"
   - Name: InputBoxStyles
     Type: BaseObjectType
     Children:
