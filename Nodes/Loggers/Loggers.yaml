@@ -1500,7 +1500,7 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:1.0000000"
+    Value: "0:00:00:0.5000000"
 - Name: ConsumptionDistribution
   Type: DataLogger
   Children:
@@ -1716,7 +1716,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
+    Value: {"IdType":2,"Id":"2dddf128d6370439c9ba759684014496","Namespace":34}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1741,7 +1741,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase1"
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1773,6 +1773,33 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/HourlyDataAggInstance/Meter"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Jace
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/HourlyDataAggInstance/Jace"
         Children:
         - Name: Mode
           Type: BaseVariableType

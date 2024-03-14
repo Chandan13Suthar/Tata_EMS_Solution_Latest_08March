@@ -651,7 +651,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"2589 KW"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
@@ -825,7 +824,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"2587 KVA"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
@@ -984,7 +982,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"5896 KVAr"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
@@ -4444,7 +4441,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"412.5 V"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
@@ -4555,7 +4551,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"415.2 V"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
@@ -4699,7 +4694,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"415.6 V"}
           - Name: HorizontalAlignment
             Type: BaseVariableType

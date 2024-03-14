@@ -67,7 +67,7 @@ public class RuntimeNetLogic6 : BaseNetLogic
         buttonVariable = owner.ButtonVariable;
 
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 500, LogicObject);
         periodicTask.Start();
 
         // Insert code to be executed when the user-defined logic is started

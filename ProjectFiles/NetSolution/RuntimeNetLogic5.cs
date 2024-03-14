@@ -25,6 +25,7 @@ using System.Reflection.Emit;
 using FTOptix.MicroController;
 using System.Collections.Generic;
 using System.Collections;
+using System.Diagnostics.Metrics;
 #endregion
 public class RuntimeNetLogic5 : BaseNetLogic
 {
@@ -37,6 +38,9 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
         dateVariable = owner.DateVariable;
         buttonVariable = owner.ButtonVariable;
+        meter1Variable = owner.Meter1Variable;
+        jace1Variable = owner.Jace1Variable;
+        countVariable = owner.CountVariable;
        
         ////////////Tags////////////////////
         meterVariable = owner.MeterVariable;
@@ -66,7 +70,7 @@ public class RuntimeNetLogic5 : BaseNetLogic
         // minconsumptionVariable = owner.MinconsumptionVariable;
         minconsumptionVariable = owner.MinconsumptionVariable;
 
-        periodicTask = new PeriodicTask(IncrementDecrementTask, 2000, LogicObject);
+        periodicTask = new PeriodicTask(IncrementDecrementTask, 1000, LogicObject);
         periodicTask.Start();
     }
 
@@ -80,6 +84,10 @@ public class RuntimeNetLogic5 : BaseNetLogic
     public void IncrementDecrementTask()
     {
         string meter = meterVariable.Value;
+        int count = countVariable.Value;
+        string jace = jaceVariable.Value;
+        string meter1 = meter1Variable.Value;
+        string jace1 = jace1Variable.Value;
         int consumption = consumptionVariable.Value;
         int activepowertotal = activepowertotalVariable.Value;
         int apparentpowertotal = apparentpowertotalVariable.Value;
@@ -132,7 +140,8 @@ public class RuntimeNetLogic5 : BaseNetLogic
         var myStore22 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
         var myStore23 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
         var myStore24 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
-       // var myStore25 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        var myStore25 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///Consumption
+        //var myStore25 = project.GetObject("DataStores").Get<Store.Store>("ODBCDatabase");///jace
 
 
 
@@ -200,7 +209,11 @@ public class RuntimeNetLogic5 : BaseNetLogic
         object[,] resultSet24;
         string[] header24;
 
-       
+        object[,] resultSet25;
+        string[] header25;
+
+
+
 
 
 
@@ -210,210 +223,221 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
         if (button == true)
         {
-            string currentHour = DateTime.Now.ToString("HH");
-            string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-           
-            string query1 = $"DELETE FROM DailyConsumption WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Meter = 'INCOMER2'";
-            string query2 = $" SELECT     Meter FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query3 = $" SELECT     MAX(Consumption)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query4 = $" SELECT     AVG(Active_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query5 = $" SELECT     AVG(Apparent_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query6 = $" SELECT     AVG(Reactive_Power_Total_Power_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query7 = $" SELECT     AVG(Active_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query8 = $" SELECT     AVG(Apparent_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query9 = $" SELECT     AVG(Reactive_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query10 = $" SELECT    AVG(Avg_Pf) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query11 = $" SELECT    AVG(Phase_R_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query12 = $" SELECT    AVG(Phase_Y_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query13 = $" SELECT    AVG(Phase_B_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query14 = $" SELECT    AVG(Avg_Current)FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query15 = $" SELECT    AVG(Avg_Voltage_LL) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query16 = $" SELECT    AVG(Avg_Voltage_LN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query17 = $" SELECT    AVG(Frequency) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query18 = $" SELECT    AVG(Voltage_RY) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query19 = $" SELECT    AVG(Voltage_YB )FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query20 = $" SELECT    AVG(Voltage_BR) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query21 = $" SELECT    AVG(Voltage_RN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query22 = $" SELECT    AVG(Voltage_YN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query23 = $" SELECT    AVG(Voltage_BN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
-            string query24 = $" SELECT    MIN(Consumption) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '33KV' AND Meter = 'INCOMER2'";
 
+            if (count <= 210)
 
-            myStore1.Query(query1, out header1, out resultSet1);
-            myStore2.Query(query2, out header2, out resultSet2);
-            myStore3.Query(query3, out header3, out resultSet3);
-            myStore4.Query(query4, out header4, out resultSet4);
-            myStore5.Query(query5, out header5, out resultSet5);
-            myStore6.Query(query6, out header6, out resultSet6);
-            myStore7.Query(query7, out header7, out resultSet7);
-            myStore8.Query(query8, out header8, out resultSet8);
-            myStore9.Query(query9, out header9, out resultSet9);
-            myStore10.Query(query10, out header10, out resultSet10);
-            myStore11.Query(query11, out header11, out resultSet11);
-            myStore12.Query(query12, out header12, out resultSet12);
-            myStore13.Query(query13, out header13, out resultSet13);
-            myStore14.Query(query14, out header14, out resultSet14);
-            myStore15.Query(query15, out header15, out resultSet15);
-            myStore16.Query(query16, out header16, out resultSet16);
-            myStore17.Query(query17, out header17, out resultSet17);
-            myStore18.Query(query18, out header18, out resultSet18);
-            myStore19.Query(query19, out header19, out resultSet19);
-            myStore20.Query(query20, out header20, out resultSet20);
-            myStore21.Query(query21, out header21, out resultSet21);
-            myStore22.Query(query22, out header22, out resultSet22);
-            myStore23.Query(query23, out header23, out resultSet23);
-            myStore24.Query(query24, out header24, out resultSet24);
-
-
-
-
-
-            var rowCount1 = resultSet1 != null ? resultSet1.GetLength(0) : 0;
-            var columnCount1 = header1 != null ? header1.Length : 0;
-            if (rowCount1 > 0 && columnCount1 > 0)
             {
-                var column1 = Convert.ToString(resultSet1[0, 0]);
-                meter = column1;
-
-            }
 
 
-            var rowCount2 = resultSet2 != null ? resultSet2.GetLength(0) : 0;
-            var columnCount2 = header2 != null ? header2.Length : 0;
-            if (rowCount2 > 0 && columnCount2 > 0)
-            {
-                var column1 = Convert.ToString(resultSet2[0, 0]);
-                meter = column1;
+                string currentHour = DateTime.Now.ToString("HH");
+                string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+                String jacee = jace1.ToString();
+                string meterr = meter1.ToString();
 
-            }
+                string query1 = $"DELETE FROM DailyConsumption WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Meter = '" + meterr + "'";
+                string query2 = $" SELECT     Meter FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query3 = $" SELECT     MAX(Consumption)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query4 = $" SELECT     AVG(Active_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query5 = $" SELECT     AVG(Apparent_Power_Total_Power_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query6 = $" SELECT     AVG(Reactive_Power_Total_Power_Total)  FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query7 = $" SELECT     AVG(Active_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query8 = $" SELECT     AVG(Apparent_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query9 = $" SELECT     AVG(Reactive_Energy_Total) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query10 = $" SELECT    AVG(Avg_Pf) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query11 = $" SELECT    AVG(Phase_R_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query12 = $" SELECT    AVG(Phase_Y_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query13 = $" SELECT    AVG(Phase_B_Current) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query14 = $" SELECT    AVG(Avg_Current)FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query15 = $" SELECT    AVG(Avg_Voltage_LL) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query16 = $" SELECT    AVG(Avg_Voltage_LN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query17 = $" SELECT    AVG(Frequency) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query18 = $" SELECT    AVG(Voltage_RY) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query19 = $" SELECT    AVG(Voltage_YB )FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query20 = $" SELECT    AVG(Voltage_BR) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query21 = $" SELECT    AVG(Voltage_RN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "'AND Meter = '" + meterr + "'";
+                string query22 = $" SELECT    AVG(Voltage_YN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query23 = $" SELECT    AVG(Voltage_BN) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query24 = $" SELECT    MIN(Consumption) FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
+                string query25 = $" SELECT    Jace FROM HomePage WHERE LocalTimestamp BETWEEN '" + currentDate + " " + currentHour + ":00:00' AND '" + currentDate + " " + currentHour + ":59:59' AND Jace = '" + jacee + "' AND Meter = '" + meterr + "'";
 
-            var rowCount3 = resultSet3 != null ? resultSet3.GetLength(0) : 0;
-            var columnCount3 = header3 != null ? header3.Length : 0;
-            if (rowCount3 > 0 && columnCount3 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet3[0, 0]);
-                maxconsumption = column1;
 
-            }
 
-            var rowCount4 = resultSet4 != null ? resultSet4.GetLength(0) : 0;
-            var columnCount4 = header4 != null ? header4.Length : 0;
-            if (rowCount4 > 0 && columnCount4 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet4[0, 0]);
-                activepowertotal = column1;
 
-            }
+                myStore1.Query(query1, out header1, out resultSet1);
+                myStore2.Query(query2, out header2, out resultSet2);
+                myStore3.Query(query3, out header3, out resultSet3);
+                myStore4.Query(query4, out header4, out resultSet4);
+                myStore5.Query(query5, out header5, out resultSet5);
+                myStore6.Query(query6, out header6, out resultSet6);
+                myStore7.Query(query7, out header7, out resultSet7);
+                myStore8.Query(query8, out header8, out resultSet8);
+                myStore9.Query(query9, out header9, out resultSet9);
+                myStore10.Query(query10, out header10, out resultSet10);
+                myStore11.Query(query11, out header11, out resultSet11);
+                myStore12.Query(query12, out header12, out resultSet12);
+                myStore13.Query(query13, out header13, out resultSet13);
+                myStore14.Query(query14, out header14, out resultSet14);
+                myStore15.Query(query15, out header15, out resultSet15);
+                myStore16.Query(query16, out header16, out resultSet16);
+                myStore17.Query(query17, out header17, out resultSet17);
+                myStore18.Query(query18, out header18, out resultSet18);
+                myStore19.Query(query19, out header19, out resultSet19);
+                myStore20.Query(query20, out header20, out resultSet20);
+                myStore21.Query(query21, out header21, out resultSet21);
+                myStore22.Query(query22, out header22, out resultSet22);
+                myStore23.Query(query23, out header23, out resultSet23);
+                myStore24.Query(query24, out header24, out resultSet24);
+                myStore25.Query(query25, out header25, out resultSet25);
 
-            var rowCount5 = resultSet5 != null ? resultSet5.GetLength(0) : 0;
-            var columnCount5 = header5 != null ? header5.Length : 0;
-            if (rowCount5 > 0 && columnCount5 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet5[0, 0]);
-                apparentpowertotal = column1;
 
-            }
 
-            var rowCount6 = resultSet6 != null ? resultSet6.GetLength(0) : 0;
-            var columnCount6 = header6 != null ? header6.Length : 0;
-            if (rowCount6 > 0 && columnCount6 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet6[0, 0]);
-                reactivepowertotal = column1;
 
-            }
+               // var rowCount1 = resultSet1 != null ? resultSet1.GetLength(0) : 0;
+               // var columnCount1 = header1 != null ? header1.Length : 0;
+               // if (rowCount1 > 0 && columnCount1 > 0)
+              //  {
+               //     var column1 = Convert.ToString(resultSet1[0, 0]);
+               //     meter = column1;
 
-            var rowCount7 = resultSet7 != null ? resultSet7.GetLength(0) : 0;
-            var columnCount7 = header7 != null ? header7.Length : 0;
-            if (rowCount7 > 0 && columnCount7 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet7[0, 0]);
-                activeenergytotal = column1;
+              //  }
 
-            }
 
-            var rowCount8 = resultSet8 != null ? resultSet8.GetLength(0) : 0;
-            var columnCount8 = header8 != null ? header8.Length : 0;
-            if (rowCount8 > 0 && columnCount8 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet8[0, 0]);
-                apparentenergytotal = column1;
+                var rowCount2 = resultSet2 != null ? resultSet2.GetLength(0) : 0;
+                var columnCount2 = header2 != null ? header2.Length : 0;
+                if (rowCount2 > 0 && columnCount2 > 0)
+                {
+                    var column1 = Convert.ToString(resultSet2[0, 0]);
+                    meter = column1;
 
-            }
+                }
 
-            var rowCount9 = resultSet9 != null ? resultSet9.GetLength(0) : 0;
-            var columnCount9 = header9 != null ? header9.Length : 0;
-            if (rowCount9 > 0 && columnCount9 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet9[0, 0]);
-                reactiveenergytotal = column1;
+                var rowCount3 = resultSet3 != null ? resultSet3.GetLength(0) : 0;
+                var columnCount3 = header3 != null ? header3.Length : 0;
+                if (rowCount3 > 0 && columnCount3 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet3[0, 0]);
+                    maxconsumption = column1;
 
-            }
+                }
 
-            var rowCount10 = resultSet10 != null ? resultSet10.GetLength(0) : 0;
-            var columnCount10 = header10 != null ? header10.Length : 0;
-            if (rowCount10 > 0 && columnCount10 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet10[0, 0]);
-                avgpf = column1;
+                var rowCount4 = resultSet4 != null ? resultSet4.GetLength(0) : 0;
+                var columnCount4 = header4 != null ? header4.Length : 0;
+                if (rowCount4 > 0 && columnCount4 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet4[0, 0]);
+                    activepowertotal = column1;
 
-            }
+                }
 
-            var rowCount11 = resultSet11 != null ? resultSet11.GetLength(0) : 0;
-            var columnCount11 = header11 != null ? header11.Length : 0;
-            if (rowCount11 > 0 && columnCount11 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet11[0, 0]);
-                phasercurrent = column1;
+                var rowCount5 = resultSet5 != null ? resultSet5.GetLength(0) : 0;
+                var columnCount5 = header5 != null ? header5.Length : 0;
+                if (rowCount5 > 0 && columnCount5 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet5[0, 0]);
+                    apparentpowertotal = column1;
 
-            }
+                }
 
-            var rowCount12 = resultSet12 != null ? resultSet12.GetLength(0) : 0;
-            var columnCount12 = header12 != null ? header12.Length : 0;
-            if (rowCount12 > 0 && columnCount12 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet12[0, 0]);
-                phaseycurrent = column1;
+                var rowCount6 = resultSet6 != null ? resultSet6.GetLength(0) : 0;
+                var columnCount6 = header6 != null ? header6.Length : 0;
+                if (rowCount6 > 0 && columnCount6 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet6[0, 0]);
+                    reactivepowertotal = column1;
 
-            }
+                }
 
-            var rowCount13 = resultSet13 != null ? resultSet13.GetLength(0) : 0;
-            var columnCount13 = header13 != null ? header13.Length : 0;
-            if (rowCount13 > 0 && columnCount13 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet13[0, 0]);
-                phasebcurrent = column1;
+                var rowCount7 = resultSet7 != null ? resultSet7.GetLength(0) : 0;
+                var columnCount7 = header7 != null ? header7.Length : 0;
+                if (rowCount7 > 0 && columnCount7 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet7[0, 0]);
+                    activeenergytotal = column1;
 
-            }
+                }
 
-            var rowCount14 = resultSet14 != null ? resultSet14.GetLength(0) : 0;
-            var columnCount14 = header14 != null ? header14.Length : 0;
-            if (rowCount4 > 0 && columnCount14 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet14[0, 0]);
-                avgcurrent = column1;
+                var rowCount8 = resultSet8 != null ? resultSet8.GetLength(0) : 0;
+                var columnCount8 = header8 != null ? header8.Length : 0;
+                if (rowCount8 > 0 && columnCount8 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet8[0, 0]);
+                    apparentenergytotal = column1;
 
-            }
+                }
 
-            var rowCount15 = resultSet15 != null ? resultSet15.GetLength(0) : 0;
-            var columnCount15 = header15 != null ? header15.Length : 0;
-            if (rowCount15 > 0 && columnCount15 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet15[0, 0]);
-                avgvoltagell = column1;
+                var rowCount9 = resultSet9 != null ? resultSet9.GetLength(0) : 0;
+                var columnCount9 = header9 != null ? header9.Length : 0;
+                if (rowCount9 > 0 && columnCount9 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet9[0, 0]);
+                    reactiveenergytotal = column1;
 
-            }
+                }
 
-            var rowCount16 = resultSet16 != null ? resultSet16.GetLength(0) : 0;
-            var columnCount16 = header16 != null ? header16.Length : 0;
-            if (rowCount16 > 0 && columnCount16 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet16[0, 0]);
-                avgvoltageln = column1;
-            } 
+                var rowCount10 = resultSet10 != null ? resultSet10.GetLength(0) : 0;
+                var columnCount10 = header10 != null ? header10.Length : 0;
+                if (rowCount10 > 0 && columnCount10 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet10[0, 0]);
+                    avgpf = column1;
 
-             var rowCount17 = resultSet17 != null ? resultSet17.GetLength(0) : 0;
-             var columnCount17 = header17 != null ? header17.Length : 0;
+                }
+
+                var rowCount11 = resultSet11 != null ? resultSet11.GetLength(0) : 0;
+                var columnCount11 = header11 != null ? header11.Length : 0;
+                if (rowCount11 > 0 && columnCount11 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet11[0, 0]);
+                    phasercurrent = column1;
+
+                }
+
+                var rowCount12 = resultSet12 != null ? resultSet12.GetLength(0) : 0;
+                var columnCount12 = header12 != null ? header12.Length : 0;
+                if (rowCount12 > 0 && columnCount12 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet12[0, 0]);
+                    phaseycurrent = column1;
+
+                }
+
+                var rowCount13 = resultSet13 != null ? resultSet13.GetLength(0) : 0;
+                var columnCount13 = header13 != null ? header13.Length : 0;
+                if (rowCount13 > 0 && columnCount13 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet13[0, 0]);
+                    phasebcurrent = column1;
+
+                }
+
+                var rowCount14 = resultSet14 != null ? resultSet14.GetLength(0) : 0;
+                var columnCount14 = header14 != null ? header14.Length : 0;
+                if (rowCount4 > 0 && columnCount14 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet14[0, 0]);
+                    avgcurrent = column1;
+
+                }
+
+                var rowCount15 = resultSet15 != null ? resultSet15.GetLength(0) : 0;
+                var columnCount15 = header15 != null ? header15.Length : 0;
+                if (rowCount15 > 0 && columnCount15 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet15[0, 0]);
+                    avgvoltagell = column1;
+
+                }
+
+                var rowCount16 = resultSet16 != null ? resultSet16.GetLength(0) : 0;
+                var columnCount16 = header16 != null ? header16.Length : 0;
+                if (rowCount16 > 0 && columnCount16 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet16[0, 0]);
+                    avgvoltageln = column1;
+                }
+
+                var rowCount17 = resultSet17 != null ? resultSet17.GetLength(0) : 0;
+                var columnCount17 = header17 != null ? header17.Length : 0;
                 if (rowCount17 > 0 && columnCount17 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet17[0, 0]);
@@ -441,57 +465,73 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
                 var rowCount20 = resultSet20 != null ? resultSet20.GetLength(0) : 0;
                 var columnCount20 = header20 != null ? header20.Length : 0;
-                if (rowCount20 > 0 && columnCount20> 0)
+                if (rowCount20 > 0 && columnCount20 > 0)
                 {
                     var column1 = Convert.ToInt32(resultSet20[0, 0]);
-                     voltagebr = column1;
+                    voltagebr = column1;
 
                 }
 
-            var rowCount21 = resultSet21 != null ? resultSet21.GetLength(0) : 0;
-            var columnCount21 = header21 != null ? header21.Length : 0;
-            if (rowCount21 > 0 && columnCount21 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet21[0, 0]);
-                voltagern = column1;
+                var rowCount21 = resultSet21 != null ? resultSet21.GetLength(0) : 0;
+                var columnCount21 = header21 != null ? header21.Length : 0;
+                if (rowCount21 > 0 && columnCount21 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet21[0, 0]);
+                    voltagern = column1;
 
+                }
+
+                var rowCount22 = resultSet22 != null ? resultSet22.GetLength(0) : 0;
+                var columnCount22 = header22 != null ? header22.Length : 0;
+                if (rowCount22 > 0 && columnCount22 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet22[0, 0]);
+                    voltageyn = column1;
+
+                }
+
+                var rowCount23 = resultSet23 != null ? resultSet23.GetLength(0) : 0;
+                var columnCount23 = header23 != null ? header23.Length : 0;
+                if (rowCount23 > 0 && columnCount23 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet23[0, 0]);
+                    voltagebn = column1;
+
+                }
+
+                var rowCount24 = resultSet24 != null ? resultSet24.GetLength(0) : 0;
+                var columnCount24 = header24 != null ? header24.Length : 0;
+                if (rowCount24 > 0 && columnCount24 > 0)
+                {
+                    var column1 = Convert.ToInt32(resultSet24[0, 0]);
+                    minconsumption = column1;
+
+                }
+
+
+                var rowCount25 = resultSet25 != null ? resultSet25.GetLength(0) : 0;
+                var columnCount25 = header25 != null ? header25.Length : 0;
+                if (rowCount25 > 0 && columnCount25 > 0)
+                {
+                    var column1 = Convert.ToString(resultSet25[0, 0]);
+                    jace = column1;
+
+                }
+
+                count = count + 1;
             }
-
-            var rowCount22 = resultSet22 != null ? resultSet22.GetLength(0) : 0;
-            var columnCount22 = header22 != null ? header22.Length : 0;
-            if (rowCount22 > 0 && columnCount22 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet22[0, 0]);
-                voltageyn = column1;
-
+            else 
+            { 
+                     count = 1;
             }
-
-            var rowCount23 = resultSet23 != null ? resultSet23.GetLength(0) : 0;
-            var columnCount23 = header23 != null ? header23.Length : 0;
-            if (rowCount23 > 0 && columnCount23 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet23[0, 0]);
-                voltagebn = column1;
-
-            }
-
-            var rowCount24 = resultSet24 != null ? resultSet24.GetLength(0) : 0;
-            var columnCount24 = header24 != null ? header24.Length : 0;
-            if (rowCount24 > 0 && columnCount24 > 0)
-            {
-                var column1 = Convert.ToInt32(resultSet24[0, 0]);
-                minconsumption = column1;
-
-            }
-
-
-
 
 
 
         }
 
          meterVariable.Value = meter;
+        countVariable.Value = count;
+         jaceVariable.Value = jace;
          consumptionVariable.Value = consumption;
         apparentpowertotalVariable.Value = apparentpowertotal;
         reactivepowertotalVariable.Value = reactivepowertotal;
@@ -520,6 +560,9 @@ public class RuntimeNetLogic5 : BaseNetLogic
 
     private IUAVariable dateVariable;
     private IUAVariable buttonVariable;
+    private IUAVariable meter1Variable;
+    private IUAVariable jace1Variable;
+    private IUAVariable countVariable;
     private IUAVariable meterVariable;
     private IUAVariable consumptionVariable;
     private IUAVariable jaceVariable;

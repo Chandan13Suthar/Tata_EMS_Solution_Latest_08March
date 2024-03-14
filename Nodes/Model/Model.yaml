@@ -3092,6 +3092,28 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/metercounter"
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "../Meter"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/jacecounter"
 - Name: HourlyDataAgg
   Id: g=b1a334e5b6bf10afd6633ca1f21e1d91
   Supertype: BaseObjectType
@@ -3206,6 +3228,40 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/metercounter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "../Meter"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/jacecounter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: HourlyDataAgg1
   Type: HourlyDataAgg
   Children:
@@ -3319,3 +3375,4696 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: Count
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Meter1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/metercounter"
+  - Name: Jace1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "../Meter"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/jacecounter"
+- Name: metercounter
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../HourlyDataAggInstance/Count"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 0
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "INCOMER1"
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "INCOMER2"
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG1_IN1_SPARE"
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG2_IN1_UTILITY"
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG3_IN1_STAMPING"
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG4_IN1_TCF"
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG5_IN1_BODYSHOP"
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG6_IN1_ENGINESHOP"
+      - Name: Pair8
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 8
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG7_IN1_PAINTSHOP"
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 9
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG8_IN2_PAINTSHOP"
+      - Name: Pair10
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 10
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG9_IN2_ENGINESHOP"
+      - Name: Pair11
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 11
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG10_IN2_BODYSHOP"
+      - Name: Pair12
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 12
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG11_IN2_TCF"
+      - Name: Pair13
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 13
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG12_IN2_STAMPING"
+      - Name: Pair14
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 14
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG13_IN2_UTILITY"
+      - Name: Pair15
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 15
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG14_IN2_SPARE"
+      - Name: Pair16
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 16
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG15_IN2_SPP"
+      - Name: Pair17
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 17
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG16_IN1_SPP"
+      - Name: Pair18
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 18
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DG_PANEL_EB_IN1"
+      - Name: Pair19
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 19
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DG_PANEL_DG_IN2"
+      - Name: Pair20
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 20
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_IN1"
+      - Name: Pair21
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 21
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_IN2"
+      - Name: Pair22
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 22
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F4"
+      - Name: Pair23
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 23
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F5"
+      - Name: Pair24
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 24
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F6"
+      - Name: Pair25
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 25
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F7"
+      - Name: Pair26
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 26
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F8"
+      - Name: Pair27
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 27
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_IN1F1"
+      - Name: Pair28
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 28
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F3"
+      - Name: Pair29
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 29
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F4"
+      - Name: Pair30
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 30
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F5"
+      - Name: Pair31
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 31
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F6"
+      - Name: Pair32
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 32
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F7"
+      - Name: Pair33
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 33
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F8"
+      - Name: Pair34
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 34
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F9"
+      - Name: Pair35
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 35
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_IN1F1"
+      - Name: Pair36
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 36
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_O/G_F3"
+      - Name: Pair37
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 37
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_O/G_F4"
+      - Name: Pair38
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 38
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_O/G_F5"
+      - Name: Pair39
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 39
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_IN1F1"
+      - Name: Pair40
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 40
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_2F1"
+      - Name: Pair41
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 41
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_3F1"
+      - Name: Pair42
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 42
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_4F1"
+      - Name: Pair43
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 43
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_5F2"
+      - Name: Pair44
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 44
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_4F2"
+      - Name: Pair45
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 45
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_IN1F1"
+      - Name: Pair46
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 46
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_2F1"
+      - Name: Pair47
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 47
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_2F2"
+      - Name: Pair48
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 48
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_3F1"
+      - Name: Pair49
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 49
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_3F2"
+      - Name: Pair50
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 50
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_4F1"
+      - Name: Pair51
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 51
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_4F2"
+      - Name: Pair52
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 52
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_5F1"
+      - Name: Pair53
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 53
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_03_IN1F1"
+      - Name: Pair54
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 54
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_03_O/G_2F1"
+      - Name: Pair55
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 55
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_03_O/G_3F1"
+      - Name: Pair56
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 56
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_IN1F1"
+      - Name: Pair57
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 57
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_2F1"
+      - Name: Pair58
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 58
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_2F2"
+      - Name: Pair59
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 59
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_3F1"
+      - Name: Pair60
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 60
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_3F2"
+      - Name: Pair61
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 61
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_4F1"
+      - Name: Pair62
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 62
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_4F2"
+      - Name: Pair63
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 63
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_5F1"
+      - Name: Pair64
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 64
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_5F2"
+      - Name: Pair65
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 65
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_6F2"
+      - Name: Pair66
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 66
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_IN1F1"
+      - Name: Pair67
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 67
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_2F1"
+      - Name: Pair68
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 68
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_3F1"
+      - Name: Pair69
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 69
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_4F1"
+      - Name: Pair70
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 70
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_5F1"
+      - Name: Pair71
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 71
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_6F1"
+      - Name: Pair72
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 72
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_7F1"
+      - Name: Pair73
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 73
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_8F1"
+      - Name: Pair74
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 74
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_01_IN1F1"
+      - Name: Pair75
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 75
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_IN1F1"
+      - Name: Pair76
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 76
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_2F1"
+      - Name: Pair77
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 77
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_3F1"
+      - Name: Pair78
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 78
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_4F1"
+      - Name: Pair79
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 79
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_5F1"
+      - Name: Pair80
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 80
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_6F1"
+      - Name: Pair81
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 81
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_7F1"
+      - Name: Pair82
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 82
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_8F1"
+      - Name: Pair83
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 83
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter63"
+      - Name: Pair85
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 84
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter64"
+      - Name: Pair86
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 85
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter65"
+      - Name: Pair87
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 86
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter66"
+      - Name: Pair88
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 87
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter67"
+      - Name: Pair89
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 88
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter68"
+      - Name: Pair90
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 89
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter69"
+      - Name: Pair91
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 90
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter70"
+      - Name: Pair92
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 91
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter71"
+      - Name: Pair93
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 92
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter72"
+      - Name: Pair94
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 93
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter74"
+      - Name: Pair84
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 94
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter75"
+      - Name: Pair95
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 95
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WTK-1-PMCC-0-01"
+      - Name: Pair96
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 96
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_IN_F1"
+      - Name: Pair97
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 97
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_IN_F2"
+      - Name: Pair98
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 98
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F4"
+      - Name: Pair99
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 99
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F5"
+      - Name: Pair100
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 100
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F6"
+      - Name: Pair101
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 101
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F7"
+      - Name: Pair102
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 102
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F8"
+      - Name: Pair103
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 103
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F9"
+      - Name: Pair104
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 104
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F10"
+      - Name: Pair105
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 105
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F11"
+      - Name: Pair106
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 106
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_07_IN1"
+      - Name: Pair107
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 107
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_07_OG3"
+      - Name: Pair108
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 108
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_06_IN1"
+      - Name: Pair109
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 109
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_06_OG4"
+      - Name: Pair110
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 110
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_01_IN1"
+      - Name: Pair111
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 111
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_02_IN1"
+      - Name: Pair112
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 112
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_03_IN1"
+      - Name: Pair113
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 113
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_04_IN1"
+      - Name: Pair114
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 114
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_05_IN1"
+      - Name: Pair115
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 115
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_IN1"
+      - Name: Pair116
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 116
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_IN2"
+      - Name: Pair117
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 117
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F3"
+      - Name: Pair118
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 118
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F4"
+      - Name: Pair119
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 119
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F6"
+      - Name: Pair120
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 120
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F7"
+      - Name: Pair121
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 121
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_01_INF1"
+      - Name: Pair122
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 122
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_01_OG_F2"
+      - Name: Pair123
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 123
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_02_INF1"
+      - Name: Pair124
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 124
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_02_OG_F2"
+      - Name: Pair125
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 125
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_INF1"
+      - Name: Pair126
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 126
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F2"
+      - Name: Pair127
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 127
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F3"
+      - Name: Pair128
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 128
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F4"
+      - Name: Pair129
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 129
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F5"
+      - Name: Pair130
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 130
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_INF1"
+      - Name: Pair131
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 131
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "extra"
+      - Name: Pair132
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 132
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F2"
+      - Name: Pair133
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 133
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F3"
+      - Name: Pair134
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 134
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F4"
+      - Name: Pair135
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 135
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F5"
+      - Name: Pair136
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 136
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F6"
+      - Name: Pair137
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 137
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F7"
+      - Name: Pair138
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 138
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F8"
+      - Name: Pair139
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 139
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_IN1"
+      - Name: Pair140
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 140
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_IN2"
+      - Name: Pair141
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 141
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F3"
+      - Name: Pair142
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 142
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F4"
+      - Name: Pair143
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 143
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F6"
+      - Name: Pair144
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 144
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F7"
+      - Name: Pair145
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 145
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_04_INF1"
+      - Name: Pair146
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 146
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_04_OG_F2"
+      - Name: Pair147
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 147
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_05_INF1"
+      - Name: Pair148
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 148
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_05_OG_F2"
+      - Name: Pair149
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 149
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_05_OG_F3"
+      - Name: Pair150
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 150
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_INF1"
+      - Name: Pair151
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 151
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_OG_F2"
+      - Name: Pair152
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 152
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_OG_F3"
+      - Name: Pair153
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 153
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_OG_F4"
+      - Name: Pair154
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 154
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_INF1"
+      - Name: Pair155
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 155
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_OG_F2"
+      - Name: Pair156
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 156
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_OG_F3"
+      - Name: Pair157
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 157
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_OG_F4"
+      - Name: Pair158
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 158
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_INF1"
+      - Name: Pair159
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 159
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_OG_F2"
+      - Name: Pair160
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 160
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_IN_F1"
+      - Name: Pair161
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 161
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_IN_F2"
+      - Name: Pair162
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 162
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_OG_F4"
+      - Name: Pair163
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 163
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_OG_F5"
+      - Name: Pair164
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 164
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_OG_F6"
+      - Name: Pair165
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 165
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_IN1F2"
+      - Name: Pair166
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 166
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_2F3"
+      - Name: Pair167
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 167
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_3F3"
+      - Name: Pair168
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 168
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_4F3"
+      - Name: Pair169
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 169
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_5F3"
+      - Name: Pair170
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 170
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_IN1F3"
+      - Name: Pair171
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 171
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_2F3"
+      - Name: Pair172
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 172
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_3F3"
+      - Name: Pair173
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 173
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_4F3"
+      - Name: Pair174
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 174
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_5F3"
+      - Name: Pair175
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 175
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_6F3"
+      - Name: Pair176
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 176
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_7F3"
+      - Name: Pair177
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 177
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-02_INF1"
+      - Name: Pair178
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 178
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-02_OG_2F3"
+      - Name: Pair179
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 179
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_3F3"
+      - Name: Pair180
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 180
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_4F3"
+      - Name: Pair181
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 181
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_6F3"
+      - Name: Pair182
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 182
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_IN_F1"
+      - Name: Pair183
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 183
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_IN_F2"
+      - Name: Pair184
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 184
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F4"
+      - Name: Pair185
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 185
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F5"
+      - Name: Pair186
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 186
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F6"
+      - Name: Pair187
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 187
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F7"
+      - Name: Pair188
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 188
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F8"
+      - Name: Pair189
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 189
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_01_INF1"
+      - Name: Pair190
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 190
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_01_OG_3F"
+      - Name: Pair191
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 191
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_INF1"
+      - Name: Pair192
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 192
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_2F"
+      - Name: Pair193
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 193
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_3F1"
+      - Name: Pair194
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 194
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_3F2"
+      - Name: Pair195
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 195
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_4F1"
+      - Name: Pair196
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 196
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_4F2"
+      - Name: Pair197
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 197
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_5F1"
+      - Name: Pair198
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 198
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_03_INF1"
+      - Name: Pair199
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 199
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_04_INF1"
+      - Name: Pair200
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 200
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_05_INF1"
+      - Name: Pair201
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 201
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADM-DB-01_INF1"
+      - Name: Pair202
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 202
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADM-EDB-01_INF2"
+      - Name: Pair214
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 203
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M1"
+      - Name: Pair215
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 204
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M2"
+      - Name: Pair216
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 205
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M3"
+      - Name: Pair217
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 206
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M4"
+      - Name: Pair203
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 207
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M5"
+      - Name: Pair204
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 208
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M6"
+      - Name: Pair205
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 209
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M7"
+      - Name: Pair206
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 210
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M8"
+      - Name: Pair207
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 211
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M9"
+- Name: jacecounter
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../metercounter"
+    - Name: Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "INCOMER1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "INCOMER2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG1_IN1_SPARE"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG2_IN1_UTILITY"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG3_IN1_STAMPING"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG4_IN1_TCF"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG5_IN1_BODYSHOP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG6_IN1_ENGINESHOP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair8
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG7_IN1_PAINTSHOP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG8_IN2_PAINTSHOP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair10
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG9_IN2_ENGINESHOP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair11
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG10_IN2_BODYSHOP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair12
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG11_IN2_TCF"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair13
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG12_IN2_STAMPING"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair14
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG13_IN2_UTILITY"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair15
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG14_IN2_SPARE"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair16
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG15_IN2_SPP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair17
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "OG16_IN1_SPP"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair18
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DG_PANEL_EB_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair19
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "DG_PANEL_DG_IN2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "33KV"
+      - Name: Pair20
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair21
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_IN2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair22
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair23
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair24
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair25
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair26
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_01_O/G_F8"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair27
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair28
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair29
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair30
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair31
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair32
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair33
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F8"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair34
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_02_O/G_F9"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair35
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair36
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_O/G_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair37
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_O/G_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair38
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MVS_03_O/G_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair39
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair40
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_2F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair41
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair42
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_4F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair43
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_5F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair44
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_01_O/G_4F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair45
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair46
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_2F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair47
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_2F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair48
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair49
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_3F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair50
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_4F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair51
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_4F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair52
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_02_O/G_5F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair53
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_03_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair54
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_03_O/G_2F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair55
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_SWB_03_O/G_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair56
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair57
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_2F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair58
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_2F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair59
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair60
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_3F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair61
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_4F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair62
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_4F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair63
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_5F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair64
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_5F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair65
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_04_O/G_6F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair66
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair67
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_2F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair68
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair69
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_4F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair70
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_5F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair71
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_6F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair72
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_7F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair73
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_03_O/G_8F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair74
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_01_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair75
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_IN1F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair76
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_2F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair77
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair78
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_4F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair79
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_5F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair80
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_6F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair81
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_7F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair82
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "MCB_MCC_05_O/G_8F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair83
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter63"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair84
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter64"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair85
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter65"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair86
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter66"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair87
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter67"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair88
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter68"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair89
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter69"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair90
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter70"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair91
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter71"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair92
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter72"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair93
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter73"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair94
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter74"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
+      - Name: Pair95
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WTK-1-PMCC-0-01"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PUMPROOM"
+      - Name: Pair96
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_IN_F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair97
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_IN_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair98
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair99
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair100
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair101
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair102
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F8"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair103
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F9"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair104
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F10"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair105
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_MVS_01_OG_F11"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair106
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_07_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair107
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_07_OG3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair108
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_06_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair109
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_06_OG4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair110
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_01_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair111
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_02_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair112
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_03_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair113
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_04_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair114
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PNT_SWB_05_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "PAINTSHOP"
+      - Name: Pair115
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair116
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_IN2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair117
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair118
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair119
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair120
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_01_OG_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair121
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_01_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair122
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_01_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair123
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_02_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair124
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_02_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair125
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair126
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair127
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair128
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair129
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_03_OG_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair130
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair131
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "extra"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair132
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair133
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair134
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair135
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair136
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair137
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair138
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_08_OG_F8"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair139
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_IN1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair140
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_IN2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair141
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair142
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair143
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair144
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_MVS_02_OG_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair145
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_04_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair146
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_04_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair147
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_05_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair148
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_05_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair149
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_05_OG_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair150
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair151
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair152
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_OG_F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair153
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_06_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair154
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair155
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BDY_SWB_07_OG_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "BODYSHOP"
+      - Name: Pair156
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_IN_F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair157
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_IN_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair158
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair159
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_OG_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair160
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF_MVS_01_OG_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair161
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_IN1F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair162
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_2F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair163
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_3F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair164
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_4F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair165
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "WH_TCF_SWB_01_OG_5F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair166
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_IN1F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair167
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_2F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair168
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_3F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair169
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_4F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair170
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_5F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair171
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_6F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair172
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_7F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair173
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-02_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair174
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-02_OG_2F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair175
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_3F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair176
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_4F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair177
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF-SWB-01_OG_6F3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "TCF"
+      - Name: Pair178
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_IN_F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair179
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_IN_F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair180
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair181
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair182
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair183
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair184
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_MVS_01_OG_F8"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair185
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_01_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair186
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_01_OG_3F"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair187
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair188
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_2F"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair189
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_3F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair190
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_3F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair191
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_4F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair192
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_4F2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair193
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_02_OG_5F1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair194
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_03_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair195
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_04_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair196
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STP_SWB_05_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "STAMPING"
+      - Name: Pair197
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADM-DB-01_INF1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADMIN"
+      - Name: Pair198
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADM-EDB-01_INF2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ADMIN"
+      - Name: Pair199
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M1"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair200
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M2"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair201
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M3"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair202
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M4"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair203
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M5"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair204
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M6"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair205
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M7"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair206
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M8"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair207
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "J18_M9"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SPP"
+      - Name: Pair208
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "meter75"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "UTILITY"
