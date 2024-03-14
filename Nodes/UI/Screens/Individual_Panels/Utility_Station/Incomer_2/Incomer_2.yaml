@@ -1195,6 +1195,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter2
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1230,6 +1243,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter2
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1265,6 +1291,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter2
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1300,6 +1339,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter2
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1344,10 +1396,18 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../CircularGauge1/Value"
         - Name: Label6
           Type: Label
           Children:
@@ -1364,10 +1424,26 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../CircularGauge2/Value"
         - Name: Label8
           Type: Label
           Children:
@@ -1384,10 +1460,26 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../CircularGauge4/Value"
         - Name: Label7
           Type: Label
           Children:
@@ -1404,10 +1496,26 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: StringFormatter1
+                      Type: StringFormatter
+                      Children:
+                      - Name: Source0
+                        Type: BaseDataVariableType
+                        DataType: BaseDataType
+                        ReferenceType: HasSource
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../../../../../CircularGauge3/Value"
       - Name: Image2
         Type: Image
         Children:
@@ -2145,10 +2253,18 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../CircularGauge1/Value"
         - Name: CircularGauge1
           Type: CircularGauge
           Children:
@@ -2156,6 +2272,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -2308,6 +2437,19 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Value: 0.0
+            Children:
+            - Name: StringFormatter2
+              Type: StringFormatter
+              Children:
+              - Name: Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: ""
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -2382,10 +2524,18 @@ Children:
                 DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: ""
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../CircularGauge1/Value"
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size

@@ -48,6 +48,9 @@ public class RuntimeNetLogic6 : BaseNetLogic
     public override void Start()
 
     {
+
+
+
         var owner = (Object)LogicObject.Owner;
        // nameVariable = owner.NameVariable;
         counterVariable = owner.CounterVariable;
