@@ -720,7 +720,7 @@ Children:
       - Name: InactiveTextColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#000000"
+        Value: "#9ba0fc"
       - Name: ActivePrimaryColor
         Type: BaseDataVariableType
         DataType: Color
@@ -728,7 +728,7 @@ Children:
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#a50ae9"
+        Value: "#01042c"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -740,7 +740,7 @@ Children:
       - Name: FontFamily
         Type: BaseDataVariableType
         DataType: Font
-        Value: "Cooper Black"
+        Value: "Lucida Fax"
       - Name: FontWeight
         Type: BaseDataVariableType
         DataType: FontWeightEnum
@@ -748,7 +748,7 @@ Children:
       - Name: TabSpacing
         Type: BaseDataVariableType
         DataType: Size
-        Value: 5.0
+        Value: 0.0
     - Name: NavigationPanelStyle1
       Type: NavigationPanelStyle
       Children:
