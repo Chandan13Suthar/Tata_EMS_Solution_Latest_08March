@@ -101,7 +101,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: ""
+                  Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Tags/RealTimePanelTags/PaintShop/Incomer_1/Active_Power_Total"
       - Name: Rectangle4
         Type: Rectangle
         Children:
