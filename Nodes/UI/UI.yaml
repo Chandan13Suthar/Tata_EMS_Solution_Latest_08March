@@ -172,7 +172,7 @@ Children:
   - Name: MaxNumberOfConnections
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 3
+    Value: 0
   - Name: Session
     Type: NodePointer
     DataType: NodeId
