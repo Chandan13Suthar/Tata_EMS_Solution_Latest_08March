@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Value Card</title>
+    <title>Neon Circle</title>
     <style>
-        .value-card {
+        /* Circle container */
+        .circle-container {
             width: 200px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            padding: 16px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            background-color: #01042c; /* Initial background color */
-            transition: all 0.3s ease; /* Adding transition for smooth effect */
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            background-color: black;
         }
 
-            .value-card:hover {
-                background-color: #0c1444; /* Change to a lighter shade on hover */
-                box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Increase shadow on hover */
+        /* Neon border */
+        .neon-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 40px rgba(0, 255, 0, 1), 0 0 80px rgba(0, 255, 0, 1), 0 0 120px rgba(0, 255, 0, 1);
+            animation: neon-animation 1.5s linear infinite alternate;
+        }
+
+        /* Animation */
+        @keyframes neon-animation {
+            0% {
+                box-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 40px rgba(0, 255, 0, 1), 0 0 80px rgba(0, 255, 0, 1), 0 0 120px rgba(0, 255, 0, 1);
             }
 
-        .value {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff; /* Text color */
+            100% {
+                box-shadow: 0 0 20px rgba(0, 255, 0, 0), 0 0 40px rgba(0, 255, 0, 0), 0 0 80px rgba(0, 255, 0, 0), 0 0 120px rgba(0, 255, 0, 0);
+            }
         }
 
-        .description {
-            margin-top: 8px;
-            font-size: 16px;
-            color: #ccc; /* Description text color */
+        /* Hover effect */
+        .circle-container:hover .neon-border {
+            animation: none;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 40px rgba(0, 255, 0, 1), 0 0 80px rgba(0, 255, 0, 1), 0 0 120px rgba(0, 255, 0, 1);
         }
     </style>
 </head>
 <body>
 
-    <div class="value-card">
-        <div class="value">42</div>
-        <div class="description">Answer to the Ultimate Question of Life, the Universe, and Everything</div>
+    <div class="circle-container">
+        <div class="neon-border"></div>
     </div>
 
 </body>
