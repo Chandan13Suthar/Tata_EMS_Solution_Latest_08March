@@ -716,7 +716,7 @@ Children:
       - Name: InactiveColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#e4e4e400"
+        Value: "#01042c"
       - Name: InactiveTextColor
         Type: BaseDataVariableType
         DataType: Color

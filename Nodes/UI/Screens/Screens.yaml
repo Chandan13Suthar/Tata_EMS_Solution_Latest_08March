@@ -249,6 +249,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: AttachedPanelLoader
+      Type: NodePointer
+      DataType: NodeId
+      ModellingRule: Optional
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/PanelLoader"
   - Name: BackgroundColor
     Type: BaseDataVariableType
     DataType: Color
