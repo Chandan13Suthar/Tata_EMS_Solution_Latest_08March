@@ -1,0 +1,5323 @@
+Name: Stamping
+Type: FolderType
+Children:
+- Name: R_Phase_Alarms1
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms1
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms1
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms1
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms2
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms2
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms2
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms2
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms3
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms3
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms3
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms3
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms4
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms4
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms4
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms4
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms5
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms5
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms5
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms5
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms6
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms6
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms6
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms6
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms7
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms7
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms7
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms7
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms8
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms8
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms8
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms8
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms9
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms9
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms9
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms9
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms10
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms10
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms10
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms10
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms11
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms11
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms11
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms11
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms12
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms12
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms12
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms12
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms13
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms13
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms13
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms13
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms14
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms14
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms14
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms14
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms15
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms15
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms15
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms15
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms16
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms16
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms16
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms16
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms17
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms17
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms17
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms17
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms18
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms18
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms18
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms18
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+- Name: R_Phase_Alarms19
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+- Name: Y_Phase_Alarms19
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Y Phase Voltage is beyond 250 V"}
+- Name: B_Phase_Alarms19
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Voltage"
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"B Phase Voltage is beyond 250 V"}
+- Name: Pf_Alarms19
+  Type: R_Phase_Alarms
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Stamping"
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Incomer_1"
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PF"
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.7
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.5
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .7"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Pf is Under .5"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}

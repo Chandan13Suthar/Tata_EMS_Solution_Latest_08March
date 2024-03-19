@@ -223,7 +223,7 @@ Children:
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
+        Value: "/Objects/Tata_EMS_Solution_Latest_08March/AlarmTypes/AlarmType_DigitalAlarmWithAreaType"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -441,245 +441,19 @@ Children:
             Value: "../../../../EventArguments/LocalTime"
     - Name: Jace
       Type: EventFieldToLog
-      DataType: BaseDataType
+      DataType: String
       ValueRank: Any
-      Value: {"Type":12,"Body":""}
-      Children:
-      - Name: KeyValueConverter1
-        Type: ValueMapConverter
-        Children:
-        - Name: Source
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../SourceName"
-        - Name: Pairs
-          Type: BaseObjectType
-          Children:
-          - Name: Pair
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmIncomer1"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair1
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmIncomer2"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair2
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmSPAREIN1OG1"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair3
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmUTILITYIN1OG2"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair4
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmSTAMPINGIN1OG3"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair5
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmTCFIN1OG4"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair6
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmBODYSHOPIN1OG5"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair7
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmENGINESHOPIN1OG6"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair8
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmPAINTSHOPIN1OG7"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair9
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmPAINTSHOPIN2OG8"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair10
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmENGINESHOPIN2OG9"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair11
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmBODYSHOPIN2G10"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair12
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmTCFIN2OG11"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair13
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmSTAMPINGIN2OG12"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair14
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmUTILITYIN2OG13"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair15
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmSPAREIN2OG14"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair16
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmSPPShopIN2OG15"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair17
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmSPPShopIN1OG16"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair18
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmEBIN1"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
-          - Name: Pair19
-            Type: ValueMapPair
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "AlarmDGIN1"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "33KV_SEGR_ROOM"
+      Value: ""
+    - Name: Meter
+      Type: EventFieldToLog
+      DataType: String
+      ValueRank: Any
+      Value: ""
+    - Name: Parameter
+      Type: EventFieldToLog
+      DataType: String
+      ValueRank: Any
+      Value: ""
 - Name: MonthlyConsumptionReport
   Type: DataLogger
   Children:
@@ -690,7 +464,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1511,7 +1285,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1716,7 +1490,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"2dddf128d6370439c9ba759684014496","Namespace":34}
+    Value: "/Objects/Tata_EMS_Solution_Latest_08March/DataStores/ODBCDatabase"
     Children:
     - Name: Kind
       Type: PropertyType

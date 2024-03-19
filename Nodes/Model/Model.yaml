@@ -8068,3 +8068,11 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           Value: "UTILITY"
+- Name: AlarmGrid_FilterArea
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM Model WHERE Area NOT LIKE '99999'"
+- Name: Test Alarm
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 250

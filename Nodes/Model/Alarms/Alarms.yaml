@@ -179,7 +179,6 @@ Children:
 - File: Area/Area.yaml
 - File: Runtime/Runtime.yaml
 - Name: ZoneSelection
-  Id: g=32e424d2b6641b5d862f3fb743add650
   Type: BaseDataVariableType
   DataType: String
   Value: "SELECT * FROM Model WHERE Area = '33KV' OR Area = 'Utility' OR Area = 'PUMPROOM' OR Area = 'PAINTSHOP' OR Area = 'BODYSHOP' OR Area = 'TCFSTATION' OR  Area = 'STAMPING' OR Area = 'ADMIN'"
@@ -191,3 +190,4 @@ Children:
   Type: BaseDataVariableType
   DataType: DateTime
   Value: "1601-01-01T00:00:00.0000000"
+- File: Selection/Selection.yaml

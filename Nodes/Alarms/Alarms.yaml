@@ -1,0 +1,11 @@
+Name: Alarms
+Type: AlarmsCategoryFolder
+Children:
+- File: Templates/Templates.yaml
+- File: 33KV/33KV.yaml
+- File: Stamping/Stamping.yaml
+- File: TCF/TCF.yaml
+- File: PaintShop/PaintShop.yaml
+- File: BodyShop/BodyShop.yaml
+- File: Utility/Utility.yaml
+- File: Admin/Admin.yaml
