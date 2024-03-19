@@ -215,6 +215,12 @@ Children:
         Type: PropertyType
         DataType: Boolean
         Value: false
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
   - Name: InputNode
     Type: PropertyType
     DataType: NodeId
