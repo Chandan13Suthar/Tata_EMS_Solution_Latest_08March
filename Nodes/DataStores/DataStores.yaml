@@ -8,7 +8,7 @@ Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
-    - Name: RecipeSchema1
+    - Name: EMSAlarmsEventLogger
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -26,52 +26,66 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
-        - Name: Name
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Jace
           Type: StoreColumn
           DataType: String
           Value: ""
-    - Name: Recipes
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=11;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Name
+        - Name: Meter
           Type: StoreColumn
           DataType: String
           Value: ""
-        - Name: /Component1
+        - Name: Parameter
           Type: StoreColumn
-          DataType: Int32
+          DataType: String
+          Value: ""
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
           Value: 0
-        - Name: /Component2
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: ConfirmedState_Id
           Type: StoreColumn
           DataType: Boolean
           Value: false
-        - Name: /Component3_0
+        - Name: EnabledState_Id
           Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: /Component3_1
+          DataType: Boolean
+          Value: false
+        - Name: ConditionName
           Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: /Component3_2
+          DataType: String
+          Value: ""
+        - Name: ActiveState_Id
           Type: StoreColumn
-          DataType: Int32
-          Value: 0
+          DataType: Boolean
+          Value: false
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: Message
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_hi-IN'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: 'Message_gu-IN'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward
@@ -145,56 +159,6 @@ Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
-    - Name: MonthlyConsumptionReport
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=11;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=11;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Date
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Jace
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: Meter
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: Power
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: Energy
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: Pf
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
     - Name: HomePage
       Type: ODBCStoreTable
       Children:
@@ -570,6 +534,39 @@ Children:
         Direction: Forward
       - Name: Columns
         Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Date
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Power
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Energy
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Pf
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
   - Name: Type
     Type: PropertyType
     DataType: DBMSType

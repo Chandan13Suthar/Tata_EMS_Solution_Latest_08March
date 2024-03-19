@@ -1,6 +1,462 @@
 Name: Reports
 Type: ReportsCategoryFolder
 Children:
+- Name: StyleSheet1
+  Id: g=3c48ece0df09e372cca2c828a24383af
+  Type: ReportStyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BorderWidth
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 0.02539999969303608
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 0.0
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: HeaderBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e6e6e6"
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+- Name: StyleSheet2
+  Id: g=6ba533335de8cbcf610ede7bcd667ea5
+  Type: ReportStyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BorderWidth
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 0.02539999969303608
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#000000"
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 0.0
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: HeaderBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: AlternateBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f0f0"
+      - Name: HeaderTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 8.0
 - Name: Daily consumption Report
   Id: g=35b5ef2011b51051890c5b129dc14a92
   Type: Report
@@ -4706,462 +5162,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
-- Name: StyleSheet1
-  Id: g=3c48ece0df09e372cca2c828a24383af
-  Type: ReportStyleSheet
-  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
-  Children:
-  - Name: BorderWidth
-    Type: BaseDataVariableType
-    DataType: Size
-    Value: 0.02539999969303608
-    Children:
-    - Name: EngineeringUnits
-      Type: EUInformationType
-      DataType: EUInformation
-      Children:
-      - Name: UnitId
-        Type: BaseVariableType
-        DataType: Int32
-        ReferenceType: HasProperty
-        AccessLevel: Read
-        Value: 5066068
-      - Name: DisplayName
-        Type: BaseVariableType
-        DataType: LocalizedText
-        ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      - Name: Description
-        Type: BaseVariableType
-        DataType: LocalizedText
-        ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-  - Name: ButtonStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ButtonStyle
-    - Name: Accent
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#075982"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-    - Name: BorderedRectangular
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e4e4e4"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-    - Name: BorderedCircular
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e4e4e4"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: Radius
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: -1.0
-    - Name: Emergency
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#eb001b"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#f8e71c"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: Radius
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: -1.0
-    - Name: Transparent
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#00000000"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#00000000"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 0.0
-  - Name: InputBoxStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: InputBoxStyle
-  - Name: SwitchStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: SwitchStyle
-  - Name: GaugeStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: GaugeStyle
-  - Name: NavigationPanelStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: NavigationPanelStyle
-      Children:
-      - Name: IconUsesTextColor
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-  - Name: ChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ChartStyle
-  - Name: DataListStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: DataListStyle
-      Children:
-      - Name: HeaderBackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e6e6e6"
-  - Name: ToolTipStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ToolTipStyle
-  - Name: ScrollBarStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ScrollBarStyle
-  - Name: AccordionStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: AccordionStyle
-  - Name: PieChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: PieChartStyle
-  - Name: HistogramChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: HistogramChartStyle
-  - Name: LabelStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: LabelStyle
-  - Name: RadioButtonStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: RadioButtonStyle
-      Children:
-      - Name: IndicatorSize
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 20.0
-  - Name: CheckBoxStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: CheckBoxStyle
-      Children:
-      - Name: IndicatorSize
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 18.0
-- Name: StyleSheet2
-  Id: g=6ba533335de8cbcf610ede7bcd667ea5
-  Type: ReportStyleSheet
-  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
-  Children:
-  - Name: BorderWidth
-    Type: BaseDataVariableType
-    DataType: Size
-    Value: 0.02539999969303608
-    Children:
-    - Name: EngineeringUnits
-      Type: EUInformationType
-      DataType: EUInformation
-      Children:
-      - Name: UnitId
-        Type: BaseVariableType
-        DataType: Int32
-        ReferenceType: HasProperty
-        AccessLevel: Read
-        Value: 5066068
-      - Name: DisplayName
-        Type: BaseVariableType
-        DataType: LocalizedText
-        ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      - Name: Description
-        Type: BaseVariableType
-        DataType: LocalizedText
-        ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-  - Name: BorderColor
-    Type: BaseDataVariableType
-    DataType: Color
-    Value: "#000000"
-  - Name: ButtonStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ButtonStyle
-    - Name: Accent
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#075982"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-    - Name: BorderedRectangular
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e4e4e4"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-    - Name: BorderedCircular
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#0fafff"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#e4e4e4"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: Radius
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: -1.0
-    - Name: Emergency
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#eb001b"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffffff"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#f8e71c"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 5.0
-      - Name: Radius
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: -1.0
-    - Name: Transparent
-      Type: ButtonStyle
-      Children:
-      - Name: Color
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#00000000"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#00000000"
-      - Name: BorderWidth
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 0.0
-  - Name: InputBoxStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: InputBoxStyle
-  - Name: SwitchStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: SwitchStyle
-  - Name: GaugeStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: GaugeStyle
-  - Name: NavigationPanelStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: NavigationPanelStyle
-      Children:
-      - Name: IconUsesTextColor
-        Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
-  - Name: ChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ChartStyle
-  - Name: DataListStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: DataListStyle
-      Children:
-      - Name: HeaderBackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#ffa500"
-      - Name: AlternateBackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#f0f0f0"
-      - Name: HeaderTextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#000000"
-  - Name: ToolTipStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ToolTipStyle
-  - Name: ScrollBarStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: ScrollBarStyle
-  - Name: AccordionStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: AccordionStyle
-  - Name: PieChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: PieChartStyle
-  - Name: HistogramChartStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: HistogramChartStyle
-  - Name: LabelStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: LabelStyle
-  - Name: RadioButtonStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: RadioButtonStyle
-      Children:
-      - Name: IndicatorSize
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 20.0
-  - Name: CheckBoxStyles
-    Type: BaseObjectType
-    Children:
-    - Name: Default
-      Type: CheckBoxStyle
-      Children:
-      - Name: IndicatorSize
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 18.0
-  - Name: FontPixelSize
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 8.0
 - Name: ConsumptionDistributionReport
   Id: g=67c0c7267cd49c5e9c974ef79ed5bfe2
   Type: Report
@@ -20870,7 +20870,6 @@ Children:
         Type: BaseObjectType
         Children:
         - Name: LocalTime
-          Id: g=8150c2c733bcb2873ecdb4329955a26f
           Type: ReportDataGridColumn
           Children:
           - Name: Width
@@ -20926,6 +20925,62 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/LocalTime"
+        - Name: Time
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Time"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Time"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Time"
         - Name: Jace
           Type: ReportDataGridColumn
           Children:
@@ -20982,6 +21037,174 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/Jace"
+        - Name: Meter
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Meter"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Meter"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Meter"
+        - Name: Parameter
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Parameter"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Parameter"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Parameter"
+        - Name: Severity
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Severity"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Severity"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Severity"
         - Name: SourceName
           Type: ReportDataGridColumn
           Children:
@@ -21038,7 +21261,7 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/SourceName"
-        - Name: 'Message_en-US'
+        - Name: ConfirmedState_Id
           Type: ReportDataGridColumn
           Children:
           - Name: Width
@@ -21069,7 +21292,7 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Message_en-US"}
+            Value: {"LocaleId":"en-US","Text":"ConfirmedState_Id"}
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -21081,7 +21304,7 @@ Children:
           - Name: OrderBy
             Type: BaseDataVariableType
             DataType: NodePath
-            Value: "{Item}/Message_en-US"
+            Value: "{Item}/ConfirmedState_Id"
           - Name: DataItemTemplate
             Type: ReportDataGridLabelItemTemplate
             Children:
@@ -21093,7 +21316,119 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Item}/Message_en-US"
+                Value: "{Item}/ConfirmedState_Id"
+        - Name: EnabledState_Id
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"EnabledState_Id"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/EnabledState_Id"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/EnabledState_Id"
+        - Name: ConditionName
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"ConditionName"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/ConditionName"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/ConditionName"
         - Name: ActiveState_Id
           Type: ReportDataGridColumn
           Children:
@@ -21150,6 +21485,230 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/ActiveState_Id"
+        - Name: AckedState_Id
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"AckedState_Id"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/AckedState_Id"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/AckedState_Id"
+        - Name: Message
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Message"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Message"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Message"
+        - Name: 'Message_hi-IN'
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Message_hi-IN"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Message_hi-IN"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Message_hi-IN"
+        - Name: 'Message_gu-IN'
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseVariableType
+                DataType: Int32
+                ReferenceType: HasProperty
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Description
+                Type: BaseVariableType
+                DataType: LocalizedText
+                ReferenceType: HasProperty
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Message_gu-IN"}
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+            Value: 0
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            Value: 0
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Message_gu-IN"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Message_gu-IN"
       - Name: SelectedItem
         Type: NodePointer
         DataType: NodeId
@@ -21174,10 +21733,63 @@ Children:
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: Query
-        Id: g=121850fbcc12607307c6cabb4b96457f
         Type: BaseDataVariableType
         DataType: String
-        Value: "SELECT * FROM \"AlarmsEventLogger\""
+        Value: ""
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            Value: {"LocaleId":"en-US","Text":"{0} {1} {2} WHERE LocalTime BETWEEN {3} AND {4} ORDER BY LocalTime DESC"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../../Model/Alarms/Selection/Filter_Jace_R"
+          - Name: ns=3;Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../../Model/Alarms/Selection/Filter_Meter_R"
+          - Name: ns=3;Source2
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../../Model/Alarms/Selection/Filter_Parameter_R"
+          - Name: ns=3;Source3
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../../Model/Reports/Forth Report/Datefrom"
+          - Name: ns=3;Source4
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../../Model/Reports/Forth Report/Dateto"
       - Name: UISelectedItem
         Type: BaseDataVariableType
         DataType: NodeId
@@ -21298,7 +21910,12 @@ Children:
       - Name: SortColumn
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: "/Objects/Tata_EMS_Solution_Latest_08March/Reports/Alarm Report/Sections/DataGridSection1/Columns/LocalTime"
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../Columns/Time@NodeId"
       - Name: SortOrder
         Type: BaseDataVariableType
         DataType: SortOrderEnum
