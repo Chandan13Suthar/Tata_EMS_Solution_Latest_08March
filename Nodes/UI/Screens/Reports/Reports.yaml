@@ -18896,12 +18896,12 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 515.0
+                Value: 496.0
               - Name: TopMargin
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 10.0
+                Value: 11.0
               - Name: VerticalAlignment
                 Type: BaseVariableType
                 DataType: VerticalAlignment
@@ -19249,7 +19249,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 9.0
+                Value: 11.0
               - Name: Width
                 Type: BaseVariableType
                 DataType: Size
@@ -19551,7 +19551,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 18.0
+                Value: 14.0
               - Name: Enabled
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -19599,7 +19599,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 4.0
+                Value: 53.0
               - Name: Width
                 Type: BaseVariableType
                 DataType: Size

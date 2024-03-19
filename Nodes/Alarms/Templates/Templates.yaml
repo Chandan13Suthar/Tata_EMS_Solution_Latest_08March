@@ -1,0 +1,112 @@
+Name: Templates
+Type: FolderType
+Children:
+- Name: R_Phase_Alarms
+  Id: g=8bbc618609c679784257b66ed6b1d687
+  Supertype: ExclusiveLevelAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Test Alarm"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Jace
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Meter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Parameter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: HighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 245 V"}
+    - Name: LowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is Under 200 V"}
+    - Name: LowLowStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"R Phase Lost"}
+    - Name: HighHighStateMessage
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"R Phase Voltage is beyond 250 V"}
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    ModellingRule: Optional
+    Value: 250.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    ModellingRule: Optional
+    Value: 245.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    ModellingRule: Optional
+    Value: 200.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: AutoAcknowledge
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: AutoConfirm
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=830f5a7a5113a07a9087a82d83b4e093

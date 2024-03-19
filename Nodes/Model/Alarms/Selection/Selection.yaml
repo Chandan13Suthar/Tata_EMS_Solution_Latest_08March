@@ -1,0 +1,15 @@
+Name: Selection
+Type: FolderType
+Children:
+- Name: Filter_Meter
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: Filter_Jace
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM Model WHERE Jace NOT LIKE '99999'"
+- Name: Filter_Parameter
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
