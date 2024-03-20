@@ -20,7 +20,7 @@ Children:
 - Name: Filter_Jace_R
   Type: BaseDataVariableType
   DataType: String
-  Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace NOT LIKE '99999'"
+  Value: "SELECT * FROM \"EMSAlarmsEventLogger\" WHERE Jace NOT LIKE '99999'"
 - Name: Filter_Parameter_R
   Type: BaseDataVariableType
   DataType: String
