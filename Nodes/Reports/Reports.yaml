@@ -20875,7 +20875,7 @@ Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 38.099998474121094
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -20931,7 +20931,7 @@ Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 38.099998474121094
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -21596,62 +21596,6 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Item}/Message"
-        - Name: 'Message_hi-IN'
-          Type: ReportDataGridColumn
-          Children:
-          - Name: Width
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: -1.0
-            Children:
-            - Name: EngineeringUnits
-              Type: EUInformationType
-              DataType: EUInformation
-              Children:
-              - Name: UnitId
-                Type: BaseVariableType
-                DataType: Int32
-                ReferenceType: HasProperty
-                AccessLevel: Read
-                Value: 5066068
-              - Name: DisplayName
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-              - Name: Description
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Message_hi-IN"}
-          - Name: HeaderAlignment
-            Type: BaseDataVariableType
-            DataType: TextHorizontalAlignment
-            Value: 0
-          - Name: ContentAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-            Value: 0
-          - Name: OrderBy
-            Type: BaseDataVariableType
-            DataType: NodePath
-            Value: "{Item}/Message_hi-IN"
-          - Name: DataItemTemplate
-            Type: ReportDataGridLabelItemTemplate
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
                 Value: "{Item}/Message_hi-IN"
         - Name: 'Message_gu-IN'
           Type: ReportDataGridColumn
@@ -21744,7 +21688,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ReferenceType: HasParameter
-            Value: {"LocaleId":"en-US","Text":"{0} {1} {2} WHERE LocalTime BETWEEN {3} AND {4} ORDER BY LocalTime DESC"}
+            Value: {"LocaleId":"en-US","Text":"SELECT * FROM \"EMSAlarmsEventLogger\" WHERE Jace = {0:sql_literal} AND Meter = {1:sql_literal}  AND LocalTime BETWEEN {2:sql_literal} AND {3:sql_literal}"}
           - Name: ns=3;Source0
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -21771,17 +21715,8 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../Model/Alarms/Selection/Filter_Parameter_R"
-          - Name: ns=3;Source3
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
               Value: "../../../../../../../Model/Reports/Forth Report/Datefrom"
-          - Name: ns=3;Source4
+          - Name: ns=3;Source3
             Type: BaseDataVariableType
             DataType: BaseDataType
             ReferenceType: HasSource
@@ -21832,7 +21767,7 @@ Children:
       - Name: TopMargin
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.8520833253860474
+        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType

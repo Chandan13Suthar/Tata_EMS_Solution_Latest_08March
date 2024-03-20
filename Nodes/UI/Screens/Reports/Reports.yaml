@@ -8083,7 +8083,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 11.0
+              Value: 8.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -19198,6 +19198,11 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: -60.0
+          - Name: InputFormat
+            Type: BaseDataVariableType
+            DataType: DateTimePickerInputFormatEnum
+            ModellingRule: Optional
+            Value: 0
         - Name: Area_Selection
           Type: ComboBox
           Children:
@@ -19297,39 +19302,39 @@ Children:
             - Name: All
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace NOT LIKE '99999'"
+              Value: "SELECT * FROM \"EMSAlarmsEventLogger\" WHERE Jace NOT LIKE '99999'"
             - Name: 33KV
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='33KV'"
+              Value: "33KV"
             - Name: Utility
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='Utility'"
+              Value: "Utility"
             - Name: Stamping
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='Stamping'"
+              Value: "Stamping"
             - Name: TCF
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='TCF'"
+              Value: "TCF"
             - Name: BodyShop
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='BodyShop'"
+              Value: "BodyShop"
             - Name: PaintShop
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='PaintShop'"
+              Value: "PaintShop"
             - Name: PumpRoom
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='PumpRoom'"
+              Value: "PumpRoom"
             - Name: Admin
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='Admin'"
+              Value: "Admin"
           - Name: SelectedValuePath
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -19389,7 +19394,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Meter"
+              Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Meter_R"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -19457,83 +19462,83 @@ Children:
             - Name: Incomer_1
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = 'Incomer_1'"
+              Value: "Incomer_1"
             - Name: Incomer_2
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = 'Incomer_2'"
+              Value: "Incomer_2"
             - Name: SPARE_IN1_OG1
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = 'SPARE_IN1_OG1'"
+              Value: "SPARE_IN1_OG1"
             - Name: UTILITY_IN1_OG2
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = '  UTILITY_IN1_OG2'"
+              Value: "UTILITY_IN1_OG2"
             - Name: STAMPING_IN1_OG3
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' STAMPING_IN1_OG3'"
+              Value: "STAMPING_IN1_OG3"
             - Name: TCF_IN1_OG4
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = 'TCF_IN1_OG4 '"
+              Value: "TCF_IN1_OG4"
             - Name: BODY_SHOP_IN1_OG5
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' BODY_SHOP_IN1_OG5'"
+              Value: "BODY_SHOP_IN1_OG5"
             - Name: ENGINE_SHOP_IN1_OG6
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' ENGINE_SHOP_IN1_OG6'"
+              Value: "ENGINE_SHOP_IN1_OG6"
             - Name: PAINT_SHOP_IN1_OG7
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' PAINT_SHOP_IN1_OG7'"
+              Value: "PAINT_SHOP_IN1_OG7"
             - Name: PAINT_SHOP_IN2_OG8
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' PAINT_SHOP_IN2_OG8'"
+              Value: "PAINT_SHOP_IN2_OG8"
             - Name: ENGINE_SHOP_IN2_OG9
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' ENGINE_SHOP_IN2_OG9'"
+              Value: "ENGINE_SHOP_IN2_OG9"
             - Name: BODY_SHOP_IN2_G10
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' BODY_SHOP_IN2_G10'"
+              Value: "BODY_SHOP_IN2_G10"
             - Name: TCF_IN2_OG11
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' TCF_IN2_OG11'"
+              Value: "TCF_IN2_OG11"
             - Name: STAMPING_IN2_OG12
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' STAMPING_IN2_OG12'"
+              Value: "STAMPING_IN2_OG12"
             - Name: UTILITY_IN2_OG13
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' UTILITY_IN2_OG13'"
+              Value: "UTILITY_IN2_OG13"
             - Name: SPARE_IN2_OG14
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' SPARE_IN2_OG14'"
+              Value: "SPARE_IN2_OG14"
             - Name: SPP_Shop_IN2_OG15
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' SPP_Shop_IN2_OG15'"
+              Value: "SPP_Shop_IN2_OG15"
             - Name: SPP_Shop_IN1_OG16
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' SPP_Shop_IN1_OG16'"
+              Value: "SPP_Shop_IN1_OG16"
             - Name: EB_IN1
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' EB_IN1'"
+              Value: "EB_IN1"
             - Name: DG_IN2
               Type: BaseDataVariableType
               DataType: String
-              Value: "AND Meter = ' DG_IN2'"
+              Value: "DG_IN2"
           - Name: SelectedValuePath
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -22292,59 +22297,6 @@ Children:
           DataType: Font
           ModellingRule: Optional
           Value: ""
-      - Name: Meter
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Jace_R"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 323.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: -17.0
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 129.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 26.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 25.0
-        - Name: FontWeight
-          Type: BaseDataVariableType
-          DataType: FontWeightEnum
-          ModellingRule: Optional
-          Value: 700
-        - Name: FontFamily
-          Type: BaseDataVariableType
-          DataType: Font
-          ModellingRule: Optional
-          Value: ""
       - Name: Parameter
         Type: Label
         Children:
@@ -22409,112 +22361,6 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 94.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 26.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 25.0
-        - Name: FontWeight
-          Type: BaseDataVariableType
-          DataType: FontWeightEnum
-          ModellingRule: Optional
-          Value: 700
-        - Name: FontFamily
-          Type: BaseDataVariableType
-          DataType: Font
-          ModellingRule: Optional
-          Value: ""
-      - Name: Meter2
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Meter_R"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 324.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 20.0
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 129.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 26.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 25.0
-        - Name: FontWeight
-          Type: BaseDataVariableType
-          DataType: FontWeightEnum
-          ModellingRule: Optional
-          Value: 700
-        - Name: FontFamily
-          Type: BaseDataVariableType
-          DataType: Font
-          ModellingRule: Optional
-          Value: ""
-      - Name: Meter3
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Parameter_R"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 824.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: -6.0
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 129.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
