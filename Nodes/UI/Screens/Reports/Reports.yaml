@@ -19297,11 +19297,11 @@ Children:
             - Name: All
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace NOT LIKE '99999'"
+              Value: "SELECT * FROM \"EMSAlarmsEventLogger\" WHERE Jace NOT LIKE '99999'"
             - Name: 33KV
               Type: BaseDataVariableType
               DataType: String
-              Value: "SELECT * FROM 'EMSAlarmsEventLogger' WHERE Jace='33KV'"
+              Value: "SELECT * FROM \"EMSAlarmsEventLogger\" WHERE Jace='33KV'"
             - Name: Utility
               Type: BaseDataVariableType
               DataType: String
@@ -19389,7 +19389,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Meter"
+              Value: "/Objects/Tata_EMS_Solution_Latest_08March/Model/Alarms/Selection/Filter_Meter_R"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -19445,7 +19445,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -19741,7 +19741,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -20257,7 +20257,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -20549,7 +20549,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -20841,7 +20841,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21229,7 +21229,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21533,7 +21533,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 11.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -21757,7 +21757,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 9.0
+            Value: 10.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -22314,7 +22314,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 323.0
+          Value: 296.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -22451,12 +22451,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 324.0
+          Value: 295.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 20.0
+          Value: 4.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size

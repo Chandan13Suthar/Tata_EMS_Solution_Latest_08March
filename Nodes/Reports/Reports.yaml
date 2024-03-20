@@ -20875,7 +20875,7 @@ Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 50.79999923706055
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -21744,7 +21744,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ReferenceType: HasParameter
-            Value: {"LocaleId":"en-US","Text":"{0} {1} {2} WHERE LocalTime BETWEEN {3} AND {4} ORDER BY LocalTime DESC"}
+            Value: {"LocaleId":"en-US","Text":"{0} {1} {2} AND LocalTime BETWEEN {3:sql_literal} AND {4:sql_literal}"}
           - Name: ns=3;Source0
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -21780,7 +21780,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../Model/Reports/Forth Report/Datefrom"
+              Value: ""
           - Name: ns=3;Source4
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -21789,7 +21789,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../Model/Reports/Forth Report/Dateto"
+              Value: ""
       - Name: UISelectedItem
         Type: BaseDataVariableType
         DataType: NodeId

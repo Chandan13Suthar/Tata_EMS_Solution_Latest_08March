@@ -86,6 +86,10 @@ Children:
           Type: StoreColumn
           DataType: String
           Value: ""
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward
